@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "643207711082",
+    "project_id": "rentify-c20de",
+    "storage_bucket": "rentify-c20de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643207711082:android:43598f41b4c9e3c4a2bd13",
+        "android_client_info": {
+          "package_name": "com.example.renters"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFeDX_zA0zW53ynJSOpCzYM9oWX9PtNSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
