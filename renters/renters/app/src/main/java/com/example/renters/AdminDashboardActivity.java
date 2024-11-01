@@ -50,8 +50,9 @@ public class AdminDashboardActivity extends AppCompatActivity {
         recyclerViewUsers = findViewById(R.id.recyclerViewUsers);
         recyclerViewUsers.setLayoutManager(new LinearLayoutManager(this));
 
+        // Initialize the user list and adapter
         userList = new ArrayList<>();
-        userAdapter = new UserAdapter(userList);
+        userAdapter = new UserAdapter(userList, db); // Pass Firestore reference for disable/delete
         recyclerViewUsers.setAdapter(userAdapter);
 
         // Fetch users from Firestore and display them in the RecyclerView
@@ -69,17 +70,6 @@ public class AdminDashboardActivity extends AppCompatActivity {
                 Intent intent = new Intent(AdminDashboardActivity.this, AdminSignin.class);
                 startActivity(intent);
                 finish();
-            }
-        });
-        // Initialize and handle the Category management button (buttonManageItems)
-        Button buttonManageItems = findViewById(R.id.buttonManageItems);
-        buttonManageItems.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Lancer CategoryManagementActivity
-                Intent intent = new Intent(AdminDashboardActivity.this, CategoryManagementActivity.class);
-                startActivity(intent);
-
             }
         });
     }
@@ -119,9 +109,10 @@ public class AdminDashboardActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             for (DocumentSnapshot document : task.getResult()) {
                                 User user = document.toObject(User.class);
+                                user.setUserId(document.getId()); // Ensure User has a setUserId() method to store document ID
                                 userList.add(user);
                             }
-                            userAdapter.notifyDataSetChanged();
+                            userAdapter.notifyDataSetChanged(); // Update the RecyclerView with new data
                         } else {
                             // Handle any errors that occurred while fetching users
                         }

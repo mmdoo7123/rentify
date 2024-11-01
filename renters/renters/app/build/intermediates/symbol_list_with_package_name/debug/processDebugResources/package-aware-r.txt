@@ -3232,7 +3232,9 @@ id btnPaymentInfo
 id btnViewRequests
 id buttonAddCategory
 id buttonAdminSignUp
+id buttonDelete
 id buttonDeleteCategory
+id buttonDisable
 id buttonEditCategory
 id buttonFirst
 id buttonGoToSignUp
@@ -3645,6 +3647,7 @@ id textTop
 id textViewCategoryDescription
 id textViewCategoryName
 id textViewGreeting
+id textViewUserName
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3852,6 +3855,7 @@ layout fragment_second2
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_category
+layout item_user
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

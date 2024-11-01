@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_primary"
+    tools:context=".LessorProfileActivity">
+
+    <!-- Profile Icon -->
+    <ImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/lessor"
+        android:contentDescription="Profile Icon"
+        android:layout_margin="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- Greeting Text -->
+
+    <!-- Buttons Section -->
+
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/profileIcon"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="Hello, (name)"
+        android:textColor="@color/my_secondary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- Change Leasing Items Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnChangeItems"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Change Items for Leasing"
+            android:textColor="@color/my_secondary"
+            app:cornerRadius="32dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- View Leasing Requests Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewRequests"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="View Leasing Requests"
+            android:textColor="@color/my_secondary"
+            app:cornerRadius="32dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Payment Information Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPaymentInfo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Payment Information"
+            android:textColor="@color/my_secondary"
+            app:cornerRadius="32dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Logout Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Logout"
+            android:textColor="@color/my_secondary"
+            app:cornerRadius="32dp"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</RelativeLayout>

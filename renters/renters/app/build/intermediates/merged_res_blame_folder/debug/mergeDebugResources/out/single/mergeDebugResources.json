@@ -1,178 +1,178 @@
 [
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\mipmap-anydpi\\ic_launcher_round.xml"
+        "merged": "com.example.renters.app-debug-71:/layout_activity_admin_dashboard.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/activity_admin_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.renters.app-debug-71:/drawable_admin.png.flat",
+        "source": "com.example.renters.app-main-73:/drawable/admin.png"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.example.renters.app-debug-71:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.renters.app-main-73:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.renters.app-debug-71:/layout_activity_main.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\drawable_baseline_remove_red_eye_24.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\drawable\\baseline_remove_red_eye_24.xml"
+        "merged": "com.example.renters.app-debug-71:/layout_item_category.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/item_category.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\drawable_lessor.png.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\drawable\\lessor.png"
+        "merged": "com.example.renters.app-debug-71:/xml_backup_rules.xml.flat",
+        "source": "com.example.renters.app-main-73:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_fragment_first.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\fragment_first.xml"
+        "merged": "com.example.renters.app-debug-71:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.renters.app-main-73:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_activity_profiles_login.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_profiles_login.xml"
+        "merged": "com.example.renters.app-debug-71:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.renters.app-main-73:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_roleselection.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\roleselection.xml"
+        "merged": "com.example.renters.app-debug-71:/layout_activity_renter_dashboard.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/activity_renter_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_activity_lessor_page.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_lessor_page.xml"
+        "merged": "com.example.renters.app-debug-71:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.renters.app-main-73:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.renters.app-debug-71:/layout_activity_lessorsignup.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/activity_lessorsignup.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_login.xml"
+        "merged": "com.example.renters.app-debug-71:/drawable_baseline_remove_red_eye_24.xml.flat",
+        "source": "com.example.renters.app-main-73:/drawable/baseline_remove_red_eye_24.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_fragment_first2.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\fragment_first2.xml"
+        "merged": "com.example.renters.app-debug-71:/layout_fragment_first2.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/fragment_first2.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_activity_signup.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_signup.xml"
+        "merged": "com.example.renters.app-debug-71:/layout_activity_signup.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/activity_signup.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\drawable_ic_add.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\drawable\\ic_add.xml"
+        "merged": "com.example.renters.app-debug-71:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.renters.app-main-73:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_activity_renter_signin.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_renter_signin.xml"
+        "merged": "com.example.renters.app-debug-71:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.example.renters.app-main-73:/mipmap-anydpi/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_activity_adminsignup.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_adminsignup.xml"
+        "merged": "com.example.renters.app-debug-71:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.renters.app-main-73:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "com.example.renters.app-debug-71:/drawable_lessor.png.flat",
+        "source": "com.example.renters.app-main-73:/drawable/lessor.png"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\xml\\backup_rules.xml"
+        "merged": "com.example.renters.app-debug-71:/layout_fragment_first.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/fragment_first.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\drawable_renter.png.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\drawable\\renter.png"
+        "merged": "com.example.renters.app-debug-71:/drawable_renter.png.flat",
+        "source": "com.example.renters.app-main-73:/drawable/renter.png"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.renters.app-debug-71:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.example.renters.app-main-73:/mipmap-anydpi/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_content_lessor_sign_in.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\content_lessor_sign_in.xml"
+        "merged": "com.example.renters.app-debug-71:/layout_activity_renter_signin.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/activity_renter_signin.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_item_category.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\item_category.xml"
+        "merged": "com.example.renters.app-debug-71:/layout_activity_lessor_page.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/activity_lessor_page.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_activity_lessor_sign_in.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_lessor_sign_in.xml"
+        "merged": "com.example.renters.app-debug-71:/layout_activity_adminsignup.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/activity_adminsignup.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_main.xml"
+        "merged": "com.example.renters.app-debug-71:/drawable_baseline_check_24.xml.flat",
+        "source": "com.example.renters.app-main-73:/drawable/baseline_check_24.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\drawable_admin.png.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\drawable\\admin.png"
+        "merged": "com.example.renters.app-debug-71:/drawable_ic_add.xml.flat",
+        "source": "com.example.renters.app-main-73:/drawable/ic_add.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_activity_lessorsignup.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_lessorsignup.xml"
+        "merged": "com.example.renters.app-debug-71:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.renters.app-main-73:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\drawable_baseline_check_24.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\drawable\\baseline_check_24.xml"
+        "merged": "com.example.renters.app-debug-71:/layout_activity_profiles_login.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/activity_profiles_login.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.renters.app-debug-71:/layout_activity_login.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\drawable_rentify.png.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\drawable\\rentify.png"
+        "merged": "com.example.renters.app-debug-71:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.renters.app-main-73:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.renters.app-debug-71:/layout_roleselection.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/roleselection.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_activity_admin_dashboard.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_admin_dashboard.xml"
+        "merged": "com.example.renters.app-debug-71:/layout_content_lessor_sign_in.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/content_lessor_sign_in.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_activity_renter_dashboard.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_renter_dashboard.xml"
+        "merged": "com.example.renters.app-debug-71:/navigation_nav_graph.xml.flat",
+        "source": "com.example.renters.app-main-73:/navigation/nav_graph.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.renters.app-debug-71:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.renters.app-main-73:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\navigation_nav_graph.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\navigation\\nav_graph.xml"
+        "merged": "com.example.renters.app-debug-71:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.renters.app-main-73:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\mipmap-hdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_fragment_second2.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\fragment_second2.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\mipmap-anydpi\\ic_launcher.xml"
+        "merged": "com.example.renters.app-debug-71:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.renters.app-main-73:/xml/data_extraction_rules.xml"
     },
     {
         "merged": "com.example.renters.app-debug-71:/layout_activity_category_management.xml.flat",
         "source": "com.example.renters.app-main-73:/layout/activity_category_management.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.example.renters.app-debug-71:/drawable_rentify.png.flat",
+        "source": "com.example.renters.app-main-73:/drawable/rentify.png"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_activity_category_management.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_category_management.xml"
+        "merged": "com.example.renters.app-debug-71:/layout_fragment_second2.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/fragment_second2.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.renters.app-debug-71:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.renters.app-main-73:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-debug-71:\\layout_fragment_second.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\fragment_second.xml"
+        "merged": "com.example.renters.app-debug-71:/layout_activity_lessor_sign_in.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/activity_lessor_sign_in.xml"
+    },
+    {
+        "merged": "com.example.renters.app-debug-71:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.renters.app-main-73:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.renters.app-debug-71:/layout_fragment_second.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/fragment_second.xml"
+    },
+    {
+        "merged": "com.example.renters.app-debug-71:/layout_item_user.xml.flat",
+        "source": "com.example.renters.app-main-73:/layout/item_user.xml"
     }
 ]

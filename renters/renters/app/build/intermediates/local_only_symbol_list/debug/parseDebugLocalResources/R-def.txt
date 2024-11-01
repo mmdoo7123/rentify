@@ -23,7 +23,9 @@ id btnPaymentInfo
 id btnViewRequests
 id buttonAddCategory
 id buttonAdminSignUp
+id buttonDelete
 id buttonDeleteCategory
+id buttonDisable
 id buttonEditCategory
 id buttonFirst
 id buttonGoToSignUp
@@ -70,6 +72,7 @@ id subtitle
 id textViewCategoryDescription
 id textViewCategoryName
 id textViewGreeting
+id textViewUserName
 id textview_first
 id textview_second
 id titleScreen
@@ -92,6 +95,7 @@ layout fragment_first2
 layout fragment_second
 layout fragment_second2
 layout item_category
+layout item_user
 layout roleselection
 mipmap ic_launcher
 mipmap ic_launcher_round
