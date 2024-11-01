@@ -71,6 +71,17 @@ public class AdminDashboardActivity extends AppCompatActivity {
                 finish();
             }
         });
+        // Initialize and handle the Category management button (buttonManageItems)
+        Button buttonManageItems = findViewById(R.id.buttonManageItems);
+        buttonManageItems.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Lancer CategoryManagementActivity
+                Intent intent = new Intent(AdminDashboardActivity.this, CategoryManagementActivity.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
     // Method to fetch the admin's name from Firestore and display it
