@@ -9,7 +9,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.renters.R;
@@ -25,26 +24,21 @@ public final class ActivityAdminDashboardBinding implements ViewBinding {
   public final Button buttonLogout;
 
   @NonNull
-  public final ConstraintLayout buttonManageCategories;
+  public final Button buttonManageCategories;
 
   @NonNull
-  public final Button buttonManageItems;
-
-  @NonNull
-  public final RecyclerView recyclerViewUsers;
+  public final Button buttonManageUsers;
 
   @NonNull
   public final TextView textViewGreeting;
 
   private ActivityAdminDashboardBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button buttonLogout, @NonNull ConstraintLayout buttonManageCategories,
-      @NonNull Button buttonManageItems, @NonNull RecyclerView recyclerViewUsers,
-      @NonNull TextView textViewGreeting) {
+      @NonNull Button buttonLogout, @NonNull Button buttonManageCategories,
+      @NonNull Button buttonManageUsers, @NonNull TextView textViewGreeting) {
     this.rootView = rootView;
     this.buttonLogout = buttonLogout;
     this.buttonManageCategories = buttonManageCategories;
-    this.buttonManageItems = buttonManageItems;
-    this.recyclerViewUsers = recyclerViewUsers;
+    this.buttonManageUsers = buttonManageUsers;
     this.textViewGreeting = textViewGreeting;
   }
 
@@ -81,17 +75,15 @@ public final class ActivityAdminDashboardBinding implements ViewBinding {
         break missingId;
       }
 
-      ConstraintLayout buttonManageCategories = (ConstraintLayout) rootView;
-
-      id = R.id.buttonManageItems;
-      Button buttonManageItems = ViewBindings.findChildViewById(rootView, id);
-      if (buttonManageItems == null) {
+      id = R.id.buttonManageCategories;
+      Button buttonManageCategories = ViewBindings.findChildViewById(rootView, id);
+      if (buttonManageCategories == null) {
         break missingId;
       }
 
-      id = R.id.recyclerViewUsers;
-      RecyclerView recyclerViewUsers = ViewBindings.findChildViewById(rootView, id);
-      if (recyclerViewUsers == null) {
+      id = R.id.buttonManageUsers;
+      Button buttonManageUsers = ViewBindings.findChildViewById(rootView, id);
+      if (buttonManageUsers == null) {
         break missingId;
       }
 
@@ -102,7 +94,7 @@ public final class ActivityAdminDashboardBinding implements ViewBinding {
       }
 
       return new ActivityAdminDashboardBinding((ConstraintLayout) rootView, buttonLogout,
-          buttonManageCategories, buttonManageItems, recyclerViewUsers, textViewGreeting);
+          buttonManageCategories, buttonManageUsers, textViewGreeting);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

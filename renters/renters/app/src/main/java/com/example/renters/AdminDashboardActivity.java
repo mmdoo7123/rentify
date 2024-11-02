@@ -31,6 +31,9 @@ public class AdminDashboardActivity extends AppCompatActivity {
     private List<User> userList;
     private TextView textViewGreeting;
 
+    private Button buttonManageUsers;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +63,8 @@ public class AdminDashboardActivity extends AppCompatActivity {
 
         // Initialize and handle the logout button
         buttonLogout = findViewById(R.id.buttonLogout);
-        buttonLogout.setOnClickListener(new View.OnClickListener() {
+        buttonLogout.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v) {
                 // Sign out the current user
@@ -70,8 +74,20 @@ public class AdminDashboardActivity extends AppCompatActivity {
                 Intent intent = new Intent(AdminDashboardActivity.this, AdminSignin.class);
                 startActivity(intent);
                 finish();
+
             }
         });
+
+        // Initialize and handle the manage users button
+        buttonManageUsers = findViewById(R.id.buttonManageUsers);
+        buttonManageUsers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminDashboardActivity.this, ManageUsersActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     // Method to fetch the admin's name from Firestore and display it

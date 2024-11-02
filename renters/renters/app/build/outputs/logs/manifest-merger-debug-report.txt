@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:2:1-44:12
 MERGED from [androidx.databinding:viewbinding:8.6.0] C:\Users\rache\.gradle\caches\transforms-4\0e913c0a934b77d4e8714076b659533f\transformed\viewbinding-8.6.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.8.2] C:\Users\rache\.gradle\caches\transforms-4\27581171e202d0097c491e13bad531bd\transformed\navigation-common-2.8.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment:2.8.2] C:\Users\rache\.gradle\caches\transforms-4\caf1ca35e0d21478bd91aa9e2ce7d5b8\transformed\navigation-fragment-2.8.2\AndroidManifest.xml:17:1-22:12
@@ -124,8 +124,8 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\rac
 	xmlns:android
 		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:5:5-38:19
-INJECTED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:5:5-38:19
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:5:5-42:19
+INJECTED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:5:5-42:19
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\rache\.gradle\caches\transforms-4\8405d5a8e64f1e808575c35a55db3df2\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\rache\.gradle\caches\transforms-4\8405d5a8e64f1e808575c35a55db3df2\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\rache\.gradle\caches\transforms-4\c9e12960e712aad449127ece704dbb4c\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -214,66 +214,74 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\rache\.gradle\cach
 		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:13:9-45
 	android:dataExtractionRules
 		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.example.renters.CategoryAdapter
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:15:9-17:40
+activity#com.example.renters.ManageUsersActivity
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:15:9-18:52
 	android:exported
 		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:17:13-37
+	android:theme
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:18:13-49
 	android:name
-		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:16:13-44
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:16:13-48
+activity#com.example.renters.CategoryAdapter
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:19:9-21:40
+	android:exported
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:20:13-44
 activity#com.example.renters.CategoryManagementActivity
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:18:9-20:40
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:22:9-24:40
 	android:exported
-		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:20:13-37
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:19:13-55
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:23:13-55
 activity#com.example.renters.RoleSelectionActivity
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:21:9-29:20
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:25:9-33:20
 	android:exported
-		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:23:13-36
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:27:13-36
 	android:name
-		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:22:13-50
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:26:13-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:31:27-74
 activity#com.example.renters.AdminSignUpActivity
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:30:9-57
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:34:9-57
 	android:name
-		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:30:19-54
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:34:19-54
 activity#com.example.renters.MainActivity
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:31:9-50
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:35:9-50
 	android:name
-		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:31:19-47
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:35:19-47
 activity#com.example.renters.AdminSignin
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:32:9-49
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:36:9-49
 	android:name
-		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:32:19-46
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:36:19-46
 activity#com.example.renters.AdminDashboardActivity
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:33:9-60
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:37:9-60
 	android:name
-		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:33:19-57
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:37:19-57
 activity#com.example.renters.RenterSigninActivity
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:34:9-58
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:38:9-58
 	android:name
-		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:34:19-55
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:38:19-55
 activity#com.example.renters.RenterDashboardActivity
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:35:9-61
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:39:9-61
 	android:name
-		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:35:19-58
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:39:19-58
 activity#com.example.renters.LessorSign
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:36:9-48
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:40:9-48
 	android:name
-		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:36:19-45
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:40:19-45
 activity#com.example.renters.LessorSignin
-ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:37:9-50
+ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:41:9-50
 	android:name
-		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:37:19-47
+		ADDED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml:41:19-47
 uses-sdk
 INJECTED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\rache\seg2105f24-project-group_project_21\renters\renters\app\src\main\AndroidManifest.xml

@@ -2,7 +2,8 @@ package com.example.renters;
 
 public class User {
     private String email;
-    private int userId;
+    private String userId;
+    private String name;
 
     public User() {
         // Empty constructor needed for Firestore serialization
@@ -22,5 +23,13 @@ public class User {
 
     public void setUserId(String id) {
         this.userId = userId;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public String getName() {
+        return name;
     }
 }

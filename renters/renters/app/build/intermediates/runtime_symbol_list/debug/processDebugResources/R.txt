@@ -2262,6 +2262,7 @@ int dimen design_tab_text_size_2line 0x7f06008e
 int dimen design_textinput_caption_translate_y 0x7f06008f
 int dimen disabled_alpha_material_dark 0x7f060090
 int dimen disabled_alpha_material_light 0x7f060091
+int dimen fab_margin 0x7f06030a
 int dimen fastscroll_default_thickness 0x7f060092
 int dimen fastscroll_margin 0x7f060093
 int dimen fastscroll_minimum_range 0x7f060094
@@ -3120,6 +3121,7 @@ int id BOTTOM_END 0x7f080002
 int id BOTTOM_START 0x7f080003
 int id CTRL 0x7f080004
 int id FUNCTION 0x7f080005
+int id First3Fragment 0x7f08024b
 int id META 0x7f080006
 int id NO_DEBUG 0x7f080007
 int id SHIFT 0x7f080008
@@ -3127,6 +3129,7 @@ int id SHOW_ALL 0x7f080009
 int id SHOW_PATH 0x7f08000a
 int id SHOW_PROGRESS 0x7f08000b
 int id SYM 0x7f08000c
+int id Second3Fragment 0x7f08024c
 int id TOP_END 0x7f08000d
 int id TOP_START 0x7f08000e
 int id accelerate 0x7f08000f
@@ -3166,6 +3169,8 @@ int id accessibility_custom_action_9 0x7f080030
 int id actionDown 0x7f080031
 int id actionDownUp 0x7f080032
 int id actionUp 0x7f080033
+int id action_First3Fragment_to_Second3Fragment 0x7f08024d
+int id action_Second3Fragment_to_First3Fragment 0x7f08024e
 int id action_bar 0x7f080034
 int id action_bar_activity_content 0x7f080035
 int id action_bar_container 0x7f080036
@@ -3240,7 +3245,7 @@ int id buttonGoToSignUp 0x7f08007a
 int id buttonLogin 0x7f08007b
 int id buttonLogout 0x7f08007c
 int id buttonManageCategories 0x7f08007d
-int id buttonManageItems 0x7f08007e
+int id buttonManageUsers 0x7f08024f
 int id buttonPanel 0x7f08007f
 int id buttonSelectAdmin 0x7f080080
 int id buttonSelectLessor 0x7f080081
@@ -3480,9 +3485,11 @@ int id mtrl_picker_title_text 0x7f08016a
 int id mtrl_view_tag_bottom_padding 0x7f08016b
 int id multiply 0x7f08016c
 int id nav_controller_view_tag 0x7f08016d
+int id nav_graph2 0x7f080250
 int id nav_host_fragment 0x7f08016e
 int id nav_host_fragment_container 0x7f08016f
 int id nav_host_fragment_content_lessor_sign_in 0x7f080170
+int id nav_host_fragment_content_manage_users 0x7f080251
 int id navigation_bar_item_active_indicator_view 0x7f080171
 int id navigation_bar_item_icon_container 0x7f080172
 int id navigation_bar_item_icon_view 0x7f080173
@@ -3824,6 +3831,7 @@ int layout activity_lessor_sign_in 0x7f0b0020
 int layout activity_lessorsignup 0x7f0b0021
 int layout activity_login 0x7f0b0022
 int layout activity_main 0x7f0b0023
+int layout activity_manage_users 0x7f0b0081
 int layout activity_profiles_login 0x7f0b0024
 int layout activity_renter_dashboard 0x7f0b0025
 int layout activity_renter_signin 0x7f0b0026
@@ -3831,6 +3839,7 @@ int layout activity_signup 0x7f0b0027
 int layout browser_actions_context_menu_page 0x7f0b0028
 int layout browser_actions_context_menu_row 0x7f0b0029
 int layout content_lessor_sign_in 0x7f0b002a
+int layout content_manage_users 0x7f0b0082
 int layout custom_dialog 0x7f0b002b
 int layout design_bottom_navigation_item 0x7f0b002c
 int layout design_bottom_sheet_dialog 0x7f0b002d
@@ -3849,8 +3858,10 @@ int layout design_text_input_end_icon 0x7f0b0039
 int layout design_text_input_start_icon 0x7f0b003a
 int layout fragment_first 0x7f0b003b
 int layout fragment_first2 0x7f0b003c
+int layout fragment_first3 0x7f0b0083
 int layout fragment_second 0x7f0b003d
 int layout fragment_second2 0x7f0b003e
+int layout fragment_second3 0x7f0b0084
 int layout ime_base_split_test_activity 0x7f0b003f
 int layout ime_secondary_split_test_activity 0x7f0b0040
 int layout item_category 0x7f0b0041
@@ -3920,6 +3931,7 @@ int layout support_simple_spinner_dropdown_item 0x7f0b0080
 int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_round 0x7f0d0001
 int navigation nav_graph 0x7f0e0000
+int navigation nav_graph2 0x7f0e0001
 int plurals mtrl_badge_content_description 0x7f0f0000
 int raw firebase_common_keep 0x7f100000
 int string abc_action_bar_home_description 0x7f110000
@@ -4042,6 +4054,7 @@ int string fab_transformation_sheet_behavior 0x7f110074
 int string fallback_menu_item_copy_link 0x7f110075
 int string fallback_menu_item_open_in_browser 0x7f110076
 int string fallback_menu_item_share_link 0x7f110077
+int string first_fragment_label 0x7f110113
 int string gcm_defaultSenderId 0x7f110078
 int string google_api_key 0x7f110079
 int string google_app_id 0x7f11007a
@@ -4174,6 +4187,7 @@ int string search_menu_title 0x7f1100f8
 int string searchbar_scrolling_view_behavior 0x7f1100f9
 int string searchview_clear_text_content_description 0x7f1100fa
 int string searchview_navigation_content_description 0x7f1100fb
+int string second_fragment_label 0x7f110114
 int string selected 0x7f1100fc
 int string side_sheet_accessibility_pane_title 0x7f1100fd
 int string side_sheet_behavior 0x7f1100fe
@@ -4311,6 +4325,7 @@ int style Base_Theme_MaterialComponents_Light_Dialog_Bridge 0x7f12006e
 int style Base_Theme_MaterialComponents_Light_Dialog_FixedSize 0x7f12006f
 int style Base_Theme_MaterialComponents_Light_Dialog_MinWidth 0x7f120070
 int style Base_Theme_MaterialComponents_Light_DialogWhenLarge 0x7f120071
+int style Base_Theme_Renters 0x7f120452
 int style Base_ThemeOverlay_AppCompat 0x7f120072
 int style Base_ThemeOverlay_AppCompat_ActionBar 0x7f120073
 int style Base_ThemeOverlay_AppCompat_Dark 0x7f120074

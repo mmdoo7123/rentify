@@ -2263,6 +2263,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -3121,6 +3122,7 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id First3Fragment
 id META
 id NO_DEBUG
 id SHIFT
@@ -3128,6 +3130,7 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id Second3Fragment
 id TOP_END
 id TOP_START
 id accelerate
@@ -3167,6 +3170,8 @@ id accessibility_custom_action_9
 id actionDown
 id actionDownUp
 id actionUp
+id action_First3Fragment_to_Second3Fragment
+id action_Second3Fragment_to_First3Fragment
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -3241,7 +3246,7 @@ id buttonGoToSignUp
 id buttonLogin
 id buttonLogout
 id buttonManageCategories
-id buttonManageItems
+id buttonManageUsers
 id buttonPanel
 id buttonSelectAdmin
 id buttonSelectLessor
@@ -3481,9 +3486,11 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
+id nav_graph2
 id nav_host_fragment
 id nav_host_fragment_container
 id nav_host_fragment_content_lessor_sign_in
+id nav_host_fragment_content_manage_users
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3825,6 +3832,7 @@ layout activity_lessor_sign_in
 layout activity_lessorsignup
 layout activity_login
 layout activity_main
+layout activity_manage_users
 layout activity_profiles_login
 layout activity_renter_dashboard
 layout activity_renter_signin
@@ -3832,6 +3840,7 @@ layout activity_signup
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout content_lessor_sign_in
+layout content_manage_users
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3850,8 +3859,10 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_first
 layout fragment_first2
+layout fragment_first3
 layout fragment_second
 layout fragment_second2
+layout fragment_second3
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_category
@@ -3921,6 +3932,7 @@ layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
+navigation nav_graph2
 plurals mtrl_badge_content_description
 raw firebase_common_keep
 string abc_action_bar_home_description
@@ -4043,6 +4055,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string first_fragment_label
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -4175,6 +4188,7 @@ string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
+string second_fragment_label
 string selected
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
@@ -4312,6 +4326,7 @@ style Base_Theme_MaterialComponents_Light_Dialog_Bridge
 style Base_Theme_MaterialComponents_Light_Dialog_FixedSize
 style Base_Theme_MaterialComponents_Light_Dialog_MinWidth
 style Base_Theme_MaterialComponents_Light_DialogWhenLarge
+style Base_Theme_Renters
 style Base_ThemeOverlay_AppCompat
 style Base_ThemeOverlay_AppCompat_ActionBar
 style Base_ThemeOverlay_AppCompat_Dark

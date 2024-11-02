@@ -37,6 +37,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.Renters" >
         <activity
+            android:name="com.example.renters.ManageUsersActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Renters" />
+        <activity
             android:name="com.example.renters.CategoryAdapter"
             android:exported="false" />
         <activity

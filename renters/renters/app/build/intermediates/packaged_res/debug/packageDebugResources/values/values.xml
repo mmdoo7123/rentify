@@ -4,7 +4,9 @@
     <color name="my_primary">#ddfdff</color>
     <color name="my_secondary">#32abb4</color>
     <color name="white">#FFFFFFFF</color>
+    <dimen name="fab_margin">16dp</dimen>
     <string name="app_name">Renters</string>
+    <string name="first_fragment_label">First Fragment</string>
     <string name="gcm_defaultSenderId" translatable="false">643207711082</string>
     <string name="google_api_key" translatable="false">AIzaSyCFeDX_zA0zW53ynJSOpCzYM9oWX9PtNSk</string>
     <string name="google_app_id" translatable="false">1:643207711082:android:43598f41b4c9e3c4a2bd13</string>
@@ -14,6 +16,11 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="project_id" translatable="false">rentify-c20de</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <style name="Base.Theme.Renters" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
     <style name="Theme.Renters" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/my_primary</item>
         <item name="colorSecondary">@color/my_secondary</item>
