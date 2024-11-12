@@ -32,6 +32,8 @@ public class AdminDashboardActivity extends AppCompatActivity {
     private TextView textViewGreeting;
 
     private Button buttonManageUsers;
+    private Button buttonManageCategories;
+
 
 
     @Override
@@ -78,6 +80,15 @@ public class AdminDashboardActivity extends AppCompatActivity {
             }
         });
 
+        buttonManageCategories = findViewById(R.id.buttonManageCategories);
+        buttonManageCategories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminDashboardActivity.this, CategoryManagementActivity.class);
+                startActivity(intent);
+            }
+        });
+
         // Initialize and handle the manage users button
         buttonManageUsers = findViewById(R.id.buttonManageUsers);
         buttonManageUsers.setOnClickListener(new View.OnClickListener() {
@@ -87,7 +98,6 @@ public class AdminDashboardActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 
     // Method to fetch the admin's name from Firestore and display it

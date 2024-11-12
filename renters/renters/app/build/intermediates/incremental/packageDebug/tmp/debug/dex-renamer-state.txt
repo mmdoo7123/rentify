@@ -1,11 +1,11 @@
-#Fri Nov 01 20:54:44 EDT 2024
-base.0=C\:\\Users\\rache\\seg2105f24-project-group_project_21\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\rache\\seg2105f24-project-group_project_21\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\rache\\seg2105f24-project-group_project_21\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
-base.3=C\:\\Users\\rache\\seg2105f24-project-group_project_21\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.4=C\:\\Users\\rache\\seg2105f24-project-group_project_21\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.5=C\:\\Users\\rache\\seg2105f24-project-group_project_21\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
-base.6=C\:\\Users\\rache\\seg2105f24-project-group_project_21\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes4.dex
+#Mon Nov 11 21:09:40 AST 2024
+base.0=C\:\\Users\\user\\Documents\\projet de SEG\\deliv2\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\user\\Documents\\projet de SEG\\deliv2\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\user\\Documents\\projet de SEG\\deliv2\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.3=C\:\\Users\\user\\Documents\\projet de SEG\\deliv2\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.4=C\:\\Users\\user\\Documents\\projet de SEG\\deliv2\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.5=C\:\\Users\\user\\Documents\\projet de SEG\\deliv2\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+base.6=C\:\\Users\\user\\Documents\\projet de SEG\\deliv2\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes4.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=4/classes.dex

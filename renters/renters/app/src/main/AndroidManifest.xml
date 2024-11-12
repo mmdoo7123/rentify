@@ -16,9 +16,7 @@
             android:name=".ManageUsersActivity"
             android:exported="false"
             android:theme="@style/Theme.Renters" />
-        <activity
-            android:name=".CategoryAdapter"
-            android:exported="false" />
+
         <activity
             android:name=".CategoryManagementActivity"
             android:exported="false" />

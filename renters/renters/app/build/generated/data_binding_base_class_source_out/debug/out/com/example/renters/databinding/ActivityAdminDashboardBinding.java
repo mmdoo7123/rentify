@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.renters.R;
@@ -30,15 +31,20 @@ public final class ActivityAdminDashboardBinding implements ViewBinding {
   public final Button buttonManageUsers;
 
   @NonNull
+  public final RecyclerView recyclerViewUsers;
+
+  @NonNull
   public final TextView textViewGreeting;
 
   private ActivityAdminDashboardBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button buttonLogout, @NonNull Button buttonManageCategories,
-      @NonNull Button buttonManageUsers, @NonNull TextView textViewGreeting) {
+      @NonNull Button buttonManageUsers, @NonNull RecyclerView recyclerViewUsers,
+      @NonNull TextView textViewGreeting) {
     this.rootView = rootView;
     this.buttonLogout = buttonLogout;
     this.buttonManageCategories = buttonManageCategories;
     this.buttonManageUsers = buttonManageUsers;
+    this.recyclerViewUsers = recyclerViewUsers;
     this.textViewGreeting = textViewGreeting;
   }
 
@@ -87,6 +93,12 @@ public final class ActivityAdminDashboardBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.recyclerViewUsers;
+      RecyclerView recyclerViewUsers = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerViewUsers == null) {
+        break missingId;
+      }
+
       id = R.id.textViewGreeting;
       TextView textViewGreeting = ViewBindings.findChildViewById(rootView, id);
       if (textViewGreeting == null) {
@@ -94,7 +106,7 @@ public final class ActivityAdminDashboardBinding implements ViewBinding {
       }
 
       return new ActivityAdminDashboardBinding((ConstraintLayout) rootView, buttonLogout,
-          buttonManageCategories, buttonManageUsers, textViewGreeting);
+          buttonManageCategories, buttonManageUsers, recyclerViewUsers, textViewGreeting);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

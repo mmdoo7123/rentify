@@ -41,9 +41,6 @@
             android:exported="false"
             android:theme="@style/Theme.Renters" />
         <activity
-            android:name="com.example.renters.CategoryAdapter"
-            android:exported="false" />
-        <activity
             android:name="com.example.renters.CategoryManagementActivity"
             android:exported="false" />
         <activity
