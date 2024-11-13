@@ -71,7 +71,8 @@ public class LessorSignin extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign-in success, navigate to lessor dashboard
-                            Intent intent = new Intent(LessorSignin.this, LessorProfileActivity.class); // Make sure this activity exists
+                            Intent intent = new Intent(LessorSignin.this, WelcomeScreenLessor.class);
+                            intent.putExtra("USER_EMAIL", email);
                             startActivity(intent);
                             finish(); // Close the login activity
                         } else {

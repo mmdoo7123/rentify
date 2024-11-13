@@ -1,74 +1,75 @@
-com.example.renters.app-emoji2-views-helper-1.4.0-0 C:\Users\user\.gradle\caches\transforms-4\0b824a449946383a8920faf95d3d977e\transformed\emoji2-views-helper-1.4.0\res
-com.example.renters.app-transition-1.4.1-1 C:\Users\user\.gradle\caches\transforms-4\0befa0c0d1df66866c0c1fef16592f5d\transformed\transition-1.4.1\res
-com.example.renters.app-lifecycle-runtime-2.6.2-2 C:\Users\user\.gradle\caches\transforms-4\10ddbcf99f619087f687dd905857c967\transformed\lifecycle-runtime-2.6.2\res
-com.example.renters.app-ui-util-release-3 C:\Users\user\.gradle\caches\transforms-4\122ace63a09b23b3ee4249cf28e3aef0\transformed\ui-util-release\res
-com.example.renters.app-appcompat-1.7.0-4 C:\Users\user\.gradle\caches\transforms-4\13bf6c7677c36829cedd90fcb7ab5785\transformed\appcompat-1.7.0\res
-com.example.renters.app-credentials-play-services-auth-1.2.0-rc01-5 C:\Users\user\.gradle\caches\transforms-4\1af8e26cb1467d3bedeb7b32c9a45bc3\transformed\credentials-play-services-auth-1.2.0-rc01\res
-com.example.renters.app-savedstate-1.2.1-6 C:\Users\user\.gradle\caches\transforms-4\1cf260595eb79eecf9ae78c995146cb0\transformed\savedstate-1.2.1\res
-com.example.renters.app-ui-text-release-7 C:\Users\user\.gradle\caches\transforms-4\1d358900e6283f04a3306e623693306d\transformed\ui-text-release\res
-com.example.renters.app-ui-graphics-release-8 C:\Users\user\.gradle\caches\transforms-4\1dde1d157ca78a9fd6b76b8ece1bc2bd\transformed\ui-graphics-release\res
-com.example.renters.app-navigation-common-2.8.2-9 C:\Users\user\.gradle\caches\transforms-4\27581171e202d0097c491e13bad531bd\transformed\navigation-common-2.8.2\res
-com.example.renters.app-fragment-ktx-1.6.2-10 C:\Users\user\.gradle\caches\transforms-4\28105d3cafe51dd6b6386b3c70f11d6e\transformed\fragment-ktx-1.6.2\res
-com.example.renters.app-play-services-auth-20.7.0-11 C:\Users\user\.gradle\caches\transforms-4\3297b5a5b563e79cf6107a8f0298df34\transformed\play-services-auth-20.7.0\res
-com.example.renters.app-animation-release-12 C:\Users\user\.gradle\caches\transforms-4\339c953718364067ec7475d1f34ddc83\transformed\animation-release\res
-com.example.renters.app-credentials-1.2.0-rc01-13 C:\Users\user\.gradle\caches\transforms-4\33b3f47ca9a7e4d984fe9d8ae334906c\transformed\credentials-1.2.0-rc01\res
-com.example.renters.app-browser-1.4.0-14 C:\Users\user\.gradle\caches\transforms-4\36291e2e2c8dbf3c656ddc17189b7e78\transformed\browser-1.4.0\res
-com.example.renters.app-lifecycle-process-2.6.2-15 C:\Users\user\.gradle\caches\transforms-4\3fc19cddb6a42e6b5bcf99a8eeb009ae\transformed\lifecycle-process-2.6.2\res
-com.example.renters.app-viewpager2-1.0.0-16 C:\Users\user\.gradle\caches\transforms-4\449d3d7572385e493c832ea389b7b035\transformed\viewpager2-1.0.0\res
-com.example.renters.app-lifecycle-runtime-ktx-2.6.2-17 C:\Users\user\.gradle\caches\transforms-4\4c9d04214d21e1d0ee162d5a001f6b61\transformed\lifecycle-runtime-ktx-2.6.2\res
-com.example.renters.app-material-icons-core-1.4.1-18 C:\Users\user\.gradle\caches\transforms-4\4e04d2d2465fb817f56bcb04cddd6351\transformed\material-icons-core-1.4.1\res
-com.example.renters.app-animation-core-release-19 C:\Users\user\.gradle\caches\transforms-4\52749a43d4a0dc0a6cb8f391fe74cefe\transformed\animation-core-release\res
-com.example.renters.app-foundation-release-20 C:\Users\user\.gradle\caches\transforms-4\5e589e67ccd62ffc0af7c600d3e38c94\transformed\foundation-release\res
-com.example.renters.app-play-services-basement-18.4.0-21 C:\Users\user\.gradle\caches\transforms-4\5fe4dc3f6a6ca064a9539c7cf7b77ca5\transformed\play-services-basement-18.4.0\res
-com.example.renters.app-navigation-runtime-2.8.2-22 C:\Users\user\.gradle\caches\transforms-4\6389c18ed8ecadae4e6cebb8f3f68808\transformed\navigation-runtime-2.8.2\res
-com.example.renters.app-core-1.13.1-23 C:\Users\user\.gradle\caches\transforms-4\66455a735fa451e6d80b24d387de1467\transformed\core-1.13.1\res
-com.example.renters.app-customview-poolingcontainer-1.0.0-24 C:\Users\user\.gradle\caches\transforms-4\6b7ff745809ae8215d488efe4914f712\transformed\customview-poolingcontainer-1.0.0\res
-com.example.renters.app-ads-adservices-1.0.0-beta05-25 C:\Users\user\.gradle\caches\transforms-4\6d6620c8b6ffab6f6671fde88a78c84a\transformed\ads-adservices-1.0.0-beta05\res
-com.example.renters.app-recyclerview-1.1.0-26 C:\Users\user\.gradle\caches\transforms-4\6e253567d071c6661476f8af06d8b296\transformed\recyclerview-1.1.0\res
-com.example.renters.app-activity-1.9.3-27 C:\Users\user\.gradle\caches\transforms-4\74702608860efca4071d12aa45a038d9\transformed\activity-1.9.3\res
-com.example.renters.app-window-1.0.0-28 C:\Users\user\.gradle\caches\transforms-4\74b682078baa546e50a346d2b53c35dc\transformed\window-1.0.0\res
-com.example.renters.app-coordinatorlayout-1.1.0-29 C:\Users\user\.gradle\caches\transforms-4\78305f77ddb62d3ef03b739fcf3ae108\transformed\coordinatorlayout-1.1.0\res
-com.example.renters.app-foundation-layout-release-30 C:\Users\user\.gradle\caches\transforms-4\784857ff3b6ae3599f3d2a5f50657b17\transformed\foundation-layout-release\res
-com.example.renters.app-appcompat-resources-1.7.0-31 C:\Users\user\.gradle\caches\transforms-4\7a56f92e6372310aaa9103ef800dbcb6\transformed\appcompat-resources-1.7.0\res
-com.example.renters.app-ads-adservices-java-1.0.0-beta05-32 C:\Users\user\.gradle\caches\transforms-4\83bd9a1b149439c5521f3e22c6b13112\transformed\ads-adservices-java-1.0.0-beta05\res
-com.example.renters.app-material-1.9.0-33 C:\Users\user\.gradle\caches\transforms-4\8405d5a8e64f1e808575c35a55db3df2\transformed\material-1.9.0\res
-com.example.renters.app-core-ktx-1.13.1-34 C:\Users\user\.gradle\caches\transforms-4\84aa7f4a0c5c6c773388e845919494a3\transformed\core-ktx-1.13.1\res
-com.example.renters.app-cardview-1.0.0-35 C:\Users\user\.gradle\caches\transforms-4\85da66beabdc4f0f5b8548629a674f1f\transformed\cardview-1.0.0\res
-com.example.renters.app-slidingpanelayout-1.2.0-36 C:\Users\user\.gradle\caches\transforms-4\89dfab3c4c75165737b9581c3270c440\transformed\slidingpanelayout-1.2.0\res
-com.example.renters.app-savedstate-ktx-1.2.1-37 C:\Users\user\.gradle\caches\transforms-4\9355583324612069979f1b7ed6ef8d49\transformed\savedstate-ktx-1.2.1\res
-com.example.renters.app-ui-unit-release-38 C:\Users\user\.gradle\caches\transforms-4\971c44cefdb970008fee9de542488c47\transformed\ui-unit-release\res
-com.example.renters.app-lifecycle-viewmodel-savedstate-2.6.2-39 C:\Users\user\.gradle\caches\transforms-4\98b59dba2a5b8ceddacaabd2d2c25aff\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
-com.example.renters.app-activity-compose-1.9.3-40 C:\Users\user\.gradle\caches\transforms-4\9a3bd8e4fc604dd31de552f9058efedf\transformed\activity-compose-1.9.3\res
-com.example.renters.app-ui-geometry-release-41 C:\Users\user\.gradle\caches\transforms-4\9ff72bc23886343cce0b8d6e54e03e42\transformed\ui-geometry-release\res
-com.example.renters.app-runtime-release-42 C:\Users\user\.gradle\caches\transforms-4\a304b57e50c1554d6c3d6bae3b64ddd4\transformed\runtime-release\res
-com.example.renters.app-fragment-1.6.2-43 C:\Users\user\.gradle\caches\transforms-4\a73c316f590eec44d32193f0e96536db\transformed\fragment-1.6.2\res
-com.example.renters.app-navigation-ui-2.8.2-44 C:\Users\user\.gradle\caches\transforms-4\b223c89c4ed5807ea762f087bbe667a8\transformed\navigation-ui-2.8.2\res
-com.example.renters.app-firebase-common-21.0.0-45 C:\Users\user\.gradle\caches\transforms-4\b7964371eea87028beb43eff0ff14b65\transformed\firebase-common-21.0.0\res
-com.example.renters.app-core-runtime-2.2.0-46 C:\Users\user\.gradle\caches\transforms-4\ba6d3a18e5a078a1e3321637152a1452\transformed\core-runtime-2.2.0\res
-com.example.renters.app-annotation-experimental-1.4.1-47 C:\Users\user\.gradle\caches\transforms-4\bf9376c9cd60b6c1b0ea7603f52193cc\transformed\annotation-experimental-1.4.1\res
-com.example.renters.app-lifecycle-viewmodel-ktx-2.6.2-48 C:\Users\user\.gradle\caches\transforms-4\c032cad1eac6d5733a0fb4f0393b3f63\transformed\lifecycle-viewmodel-ktx-2.6.2\res
-com.example.renters.app-lifecycle-livedata-2.6.2-49 C:\Users\user\.gradle\caches\transforms-4\c600d0a3525f1875ac82d9ab097bd8a8\transformed\lifecycle-livedata-2.6.2\res
-com.example.renters.app-activity-ktx-1.9.3-50 C:\Users\user\.gradle\caches\transforms-4\c8d171380c669563c8ac6f55fabc9410\transformed\activity-ktx-1.9.3\res
-com.example.renters.app-drawerlayout-1.1.1-51 C:\Users\user\.gradle\caches\transforms-4\c955de0307aa5c512a558f1c05f3624c\transformed\drawerlayout-1.1.1\res
-com.example.renters.app-constraintlayout-2.1.4-52 C:\Users\user\.gradle\caches\transforms-4\c9e12960e712aad449127ece704dbb4c\transformed\constraintlayout-2.1.4\res
-com.example.renters.app-lifecycle-livedata-core-ktx-2.6.2-53 C:\Users\user\.gradle\caches\transforms-4\ca8c9859393174791fcfe7c6161a405b\transformed\lifecycle-livedata-core-ktx-2.6.2\res
-com.example.renters.app-material3-1.1.1-54 C:\Users\user\.gradle\caches\transforms-4\cab9a65d796431afc265ce01bdc42275\transformed\material3-1.1.1\res
-com.example.renters.app-navigation-fragment-2.8.2-55 C:\Users\user\.gradle\caches\transforms-4\caf1ca35e0d21478bd91aa9e2ce7d5b8\transformed\navigation-fragment-2.8.2\res
-com.example.renters.app-play-services-base-18.5.0-56 C:\Users\user\.gradle\caches\transforms-4\ccf0cff8b3726fef52b66e5a702f90d1\transformed\play-services-base-18.5.0\res
-com.example.renters.app-runtime-saveable-release-57 C:\Users\user\.gradle\caches\transforms-4\d07ab1abad25cbed7f64dbd1f3297eba\transformed\runtime-saveable-release\res
-com.example.renters.app-emoji2-1.4.0-58 C:\Users\user\.gradle\caches\transforms-4\d2bd4baa9c9bf77749c07da736d6c3ed\transformed\emoji2-1.4.0\res
-com.example.renters.app-play-services-measurement-api-22.1.2-59 C:\Users\user\.gradle\caches\transforms-4\d96b1abe98e367d2e294dda4ddbc1231\transformed\play-services-measurement-api-22.1.2\res
-com.example.renters.app-startup-runtime-1.1.1-60 C:\Users\user\.gradle\caches\transforms-4\e0c42916dc1c6252a53f2b8b296935ac\transformed\startup-runtime-1.1.1\res
-com.example.renters.app-ui-release-61 C:\Users\user\.gradle\caches\transforms-4\e980024dcb725aa189c6da3abea3914b\transformed\ui-release\res
-com.example.renters.app-material-ripple-1.4.1-62 C:\Users\user\.gradle\caches\transforms-4\f144240b86a5ec47cd4db514d36d1b2e\transformed\material-ripple-1.4.1\res
-com.example.renters.app-lifecycle-viewmodel-2.6.2-63 C:\Users\user\.gradle\caches\transforms-4\f18287528b0feea787354ddf35ed7143\transformed\lifecycle-viewmodel-2.6.2\res
-com.example.renters.app-profileinstaller-1.3.1-64 C:\Users\user\.gradle\caches\transforms-4\f2d3cffc81f4c9faf3f7b5edaf17a526\transformed\profileinstaller-1.3.1\res
-com.example.renters.app-lifecycle-livedata-core-2.6.2-65 C:\Users\user\.gradle\caches\transforms-4\f4de58864b6cd4d8867a50aec38231d0\transformed\lifecycle-livedata-core-2.6.2\res
-com.example.renters.app-google-services-66 C:\Users\user\Documents\projet de SEG\deliv2\renters\renters\app\build\generated\res\google-services\debug
+com.example.renters.app-appcompat-resources-1.7.0-0 C:\Users\user\.gradle\caches\transforms-4\029a6e9be360f66e4553c03d652e5f6d\transformed\appcompat-resources-1.7.0\res
+com.example.renters.app-play-services-base-18.5.0-1 C:\Users\user\.gradle\caches\transforms-4\0358516a02fdeabde728380361624c2f\transformed\play-services-base-18.5.0\res
+com.example.renters.app-ui-graphics-release-2 C:\Users\user\.gradle\caches\transforms-4\04446a86fb0898a39afc68cfdca30808\transformed\ui-graphics-release\res
+com.example.renters.app-annotation-experimental-1.4.1-3 C:\Users\user\.gradle\caches\transforms-4\072b3b0c0a935031588846b22ff7e247\transformed\annotation-experimental-1.4.1\res
+com.example.renters.app-firebase-common-21.0.0-4 C:\Users\user\.gradle\caches\transforms-4\152ff37c160914c0f9e59ac254a5c808\transformed\firebase-common-21.0.0\res
+com.example.renters.app-lifecycle-livedata-core-2.6.2-5 C:\Users\user\.gradle\caches\transforms-4\1aabd634a1000df7238d372f62b1c8a0\transformed\lifecycle-livedata-core-2.6.2\res
+com.example.renters.app-browser-1.4.0-6 C:\Users\user\.gradle\caches\transforms-4\1b9d298571965c7f14696d05f1e0bb72\transformed\browser-1.4.0\res
+com.example.renters.app-navigation-common-2.8.2-7 C:\Users\user\.gradle\caches\transforms-4\225ebf480b4467c063c752d9ff547af8\transformed\navigation-common-2.8.2\res
+com.example.renters.app-lifecycle-viewmodel-ktx-2.6.2-8 C:\Users\user\.gradle\caches\transforms-4\277c0b2afe90f666ee2249e50fb8988d\transformed\lifecycle-viewmodel-ktx-2.6.2\res
+com.example.renters.app-lifecycle-livedata-core-ktx-2.6.2-9 C:\Users\user\.gradle\caches\transforms-4\290da4dd09e0f74fc9d2f73e9027da84\transformed\lifecycle-livedata-core-ktx-2.6.2\res
+com.example.renters.app-play-services-auth-20.7.0-10 C:\Users\user\.gradle\caches\transforms-4\29e8231dc8e5ab6d33a92788ed1948f8\transformed\play-services-auth-20.7.0\res
+com.example.renters.app-animation-release-11 C:\Users\user\.gradle\caches\transforms-4\31de029c49628c16c2746db0e651e0f2\transformed\animation-release\res
+com.example.renters.app-customview-poolingcontainer-1.0.0-12 C:\Users\user\.gradle\caches\transforms-4\3695e6ed2aa6e155039ad65b26257944\transformed\customview-poolingcontainer-1.0.0\res
+com.example.renters.app-foundation-release-13 C:\Users\user\.gradle\caches\transforms-4\384f14fba6f4ad0a33479c0d5dd29438\transformed\foundation-release\res
+com.example.renters.app-material-ripple-1.4.1-14 C:\Users\user\.gradle\caches\transforms-4\3d6b49e6e21a5a5dd2bcaad2806142c0\transformed\material-ripple-1.4.1\res
+com.example.renters.app-lifecycle-livedata-2.6.2-15 C:\Users\user\.gradle\caches\transforms-4\3e615a1a1e44072a7120cc7bebd103cd\transformed\lifecycle-livedata-2.6.2\res
+com.example.renters.app-coordinatorlayout-1.1.0-16 C:\Users\user\.gradle\caches\transforms-4\41bdb4d560b5fe5d14815147b7375044\transformed\coordinatorlayout-1.1.0\res
+com.example.renters.app-ui-geometry-release-17 C:\Users\user\.gradle\caches\transforms-4\4e9f1195a0b4febe29f6b4566ca463bd\transformed\ui-geometry-release\res
+com.example.renters.app-activity-compose-1.9.3-18 C:\Users\user\.gradle\caches\transforms-4\4edf60c36239601b72230826c2de7b7e\transformed\activity-compose-1.9.3\res
+com.example.renters.app-material-1.9.0-19 C:\Users\user\.gradle\caches\transforms-4\57d5aad0fe92b28874fd9568c362410c\transformed\material-1.9.0\res
+com.example.renters.app-credentials-1.2.0-rc01-20 C:\Users\user\.gradle\caches\transforms-4\68614b5ab415265688185d74c0ffb94f\transformed\credentials-1.2.0-rc01\res
+com.example.renters.app-runtime-release-21 C:\Users\user\.gradle\caches\transforms-4\6c4c2a501de732a5d13a6a113e2d41a9\transformed\runtime-release\res
+com.example.renters.app-emoji2-1.4.0-22 C:\Users\user\.gradle\caches\transforms-4\7255f46bac0af26bb023fabd4d06940e\transformed\emoji2-1.4.0\res
+com.example.renters.app-play-services-measurement-api-22.1.2-23 C:\Users\user\.gradle\caches\transforms-4\72c3293d284be07dc54c5368eb020a03\transformed\play-services-measurement-api-22.1.2\res
+com.example.renters.app-lifecycle-runtime-2.6.2-24 C:\Users\user\.gradle\caches\transforms-4\7492fefe1b243c9aef7148e2a602c61b\transformed\lifecycle-runtime-2.6.2\res
+com.example.renters.app-emoji2-views-helper-1.4.0-25 C:\Users\user\.gradle\caches\transforms-4\789dd0d248da37e1089e6b4b229ef264\transformed\emoji2-views-helper-1.4.0\res
+com.example.renters.app-navigation-runtime-2.8.2-26 C:\Users\user\.gradle\caches\transforms-4\7bc980514a2f771ac0aca20412f7c429\transformed\navigation-runtime-2.8.2\res
+com.example.renters.app-recyclerview-1.1.0-27 C:\Users\user\.gradle\caches\transforms-4\7f02bb5ad6550a098cc5e3b5c8bfb85b\transformed\recyclerview-1.1.0\res
+com.example.renters.app-activity-1.9.3-28 C:\Users\user\.gradle\caches\transforms-4\837d32566d6176ad8870c0f9a1a88f5a\transformed\activity-1.9.3\res
+com.example.renters.app-constraintlayout-2.1.4-29 C:\Users\user\.gradle\caches\transforms-4\839e24fb22692c41d3cd0de872f6fe64\transformed\constraintlayout-2.1.4\res
+com.example.renters.app-core-runtime-2.2.0-30 C:\Users\user\.gradle\caches\transforms-4\85109a1ce81143f2223f5c340dbda750\transformed\core-runtime-2.2.0\res
+com.example.renters.app-lifecycle-viewmodel-2.6.2-31 C:\Users\user\.gradle\caches\transforms-4\87a385e47cbd19b5e2a1a180284b985e\transformed\lifecycle-viewmodel-2.6.2\res
+com.example.renters.app-play-services-basement-18.4.0-32 C:\Users\user\.gradle\caches\transforms-4\906c47f1cb8523577f3a530e9720fbf8\transformed\play-services-basement-18.4.0\res
+com.example.renters.app-navigation-ui-2.8.2-33 C:\Users\user\.gradle\caches\transforms-4\93d59eed46767334faca26a22f88c67f\transformed\navigation-ui-2.8.2\res
+com.example.renters.app-ui-text-release-34 C:\Users\user\.gradle\caches\transforms-4\96740e0974afc3a8ea361108e252913a\transformed\ui-text-release\res
+com.example.renters.app-startup-runtime-1.1.1-35 C:\Users\user\.gradle\caches\transforms-4\968e6be45b7832a18992c834406b5aa5\transformed\startup-runtime-1.1.1\res
+com.example.renters.app-animation-core-release-36 C:\Users\user\.gradle\caches\transforms-4\997185a2f1813ca0e18261069c6e4995\transformed\animation-core-release\res
+com.example.renters.app-core-ktx-1.13.1-37 C:\Users\user\.gradle\caches\transforms-4\99e0e34316c7196e239c4f31d0d810ad\transformed\core-ktx-1.13.1\res
+com.example.renters.app-material3-1.1.1-38 C:\Users\user\.gradle\caches\transforms-4\9c569d47448c468f0cc5356f5cf2e95a\transformed\material3-1.1.1\res
+com.example.renters.app-core-common-2.0.3-39 C:\Users\user\.gradle\caches\transforms-4\9ecfb0ba355cb23cd4e1ab8ccf97b3e2\transformed\core-common-2.0.3\res
+com.example.renters.app-navigation-fragment-2.8.2-40 C:\Users\user\.gradle\caches\transforms-4\a6406210272cb3c0805737fd44be86cb\transformed\navigation-fragment-2.8.2\res
+com.example.renters.app-slidingpanelayout-1.2.0-41 C:\Users\user\.gradle\caches\transforms-4\a96b8ebd87ab9ff7dab87744465fb0c7\transformed\slidingpanelayout-1.2.0\res
+com.example.renters.app-lifecycle-process-2.6.2-42 C:\Users\user\.gradle\caches\transforms-4\a9e2b7f4a5347c73f83afabeef9d1689\transformed\lifecycle-process-2.6.2\res
+com.example.renters.app-profileinstaller-1.3.1-43 C:\Users\user\.gradle\caches\transforms-4\af4c0674ddf3315dd7f9dcb021a81c72\transformed\profileinstaller-1.3.1\res
+com.example.renters.app-transition-1.4.1-44 C:\Users\user\.gradle\caches\transforms-4\b04bd89fa9720643ba305c45aa3deaab\transformed\transition-1.4.1\res
+com.example.renters.app-core-1.13.1-45 C:\Users\user\.gradle\caches\transforms-4\b105f2f5969d5597ea673fd5004c0a59\transformed\core-1.13.1\res
+com.example.renters.app-ui-unit-release-46 C:\Users\user\.gradle\caches\transforms-4\b64491da62ca1fbdb362d5fa8553fbdd\transformed\ui-unit-release\res
+com.example.renters.app-lifecycle-viewmodel-savedstate-2.6.2-47 C:\Users\user\.gradle\caches\transforms-4\bbc1d4d1c0dbf1f3416902c8cb1b35e7\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
+com.example.renters.app-appcompat-1.7.0-48 C:\Users\user\.gradle\caches\transforms-4\be51343d24fea3713aae320e621173ea\transformed\appcompat-1.7.0\res
+com.example.renters.app-ads-adservices-java-1.0.0-beta05-49 C:\Users\user\.gradle\caches\transforms-4\c0bca9d7653b35657fe5822d02763fcf\transformed\ads-adservices-java-1.0.0-beta05\res
+com.example.renters.app-material-icons-core-1.4.1-50 C:\Users\user\.gradle\caches\transforms-4\c29616b08bfaeeeb007b9a2d53b3da5e\transformed\material-icons-core-1.4.1\res
+com.example.renters.app-savedstate-ktx-1.2.1-51 C:\Users\user\.gradle\caches\transforms-4\c64fba2316cdd016e5598217f6662c15\transformed\savedstate-ktx-1.2.1\res
+com.example.renters.app-credentials-play-services-auth-1.2.0-rc01-52 C:\Users\user\.gradle\caches\transforms-4\c8d6ad47ec1104a828e70d378f02ab44\transformed\credentials-play-services-auth-1.2.0-rc01\res
+com.example.renters.app-savedstate-1.2.1-53 C:\Users\user\.gradle\caches\transforms-4\d08e8fc9a253614b87da776b72258cca\transformed\savedstate-1.2.1\res
+com.example.renters.app-window-1.0.0-54 C:\Users\user\.gradle\caches\transforms-4\d1c7ca1169c7b14481bdfdf73e1de377\transformed\window-1.0.0\res
+com.example.renters.app-lifecycle-runtime-ktx-2.6.2-55 C:\Users\user\.gradle\caches\transforms-4\d291dc4b8bc627443ea48f1f355e7d65\transformed\lifecycle-runtime-ktx-2.6.2\res
+com.example.renters.app-activity-ktx-1.9.3-56 C:\Users\user\.gradle\caches\transforms-4\df5d17849a1b8c6300820f57b596bb59\transformed\activity-ktx-1.9.3\res
+com.example.renters.app-ui-release-57 C:\Users\user\.gradle\caches\transforms-4\e2f15fdbfb5ac8ca6ff857c904653ed8\transformed\ui-release\res
+com.example.renters.app-cardview-1.0.0-58 C:\Users\user\.gradle\caches\transforms-4\e6389d57b8a3c4bd106f0240feb26ea6\transformed\cardview-1.0.0\res
+com.example.renters.app-foundation-layout-release-59 C:\Users\user\.gradle\caches\transforms-4\e71304f972e95759ee1fd97608293f06\transformed\foundation-layout-release\res
+com.example.renters.app-fragment-1.6.2-60 C:\Users\user\.gradle\caches\transforms-4\e859e88295f3ebbeaeba99005beb93a9\transformed\fragment-1.6.2\res
+com.example.renters.app-fragment-ktx-1.6.2-61 C:\Users\user\.gradle\caches\transforms-4\ea6955ca29c2cdac793706425beaad28\transformed\fragment-ktx-1.6.2\res
+com.example.renters.app-runtime-saveable-release-62 C:\Users\user\.gradle\caches\transforms-4\ebae3bb1c16f86f5b8f7b69d75ba57d1\transformed\runtime-saveable-release\res
+com.example.renters.app-ads-adservices-1.0.0-beta05-63 C:\Users\user\.gradle\caches\transforms-4\ef2c98c7a30252537f0e074d26b0003f\transformed\ads-adservices-1.0.0-beta05\res
+com.example.renters.app-ui-util-release-64 C:\Users\user\.gradle\caches\transforms-4\f2744446f4460f96cd2517a9fb623c86\transformed\ui-util-release\res
+com.example.renters.app-viewpager2-1.0.0-65 C:\Users\user\.gradle\caches\transforms-4\f3e224a9c79c9d4e3302cc0f055171c5\transformed\viewpager2-1.0.0\res
+com.example.renters.app-drawerlayout-1.1.1-66 C:\Users\user\.gradle\caches\transforms-4\f7b682dff6094caac03e8e3df7bc93a8\transformed\drawerlayout-1.1.1\res
 com.example.renters.app-pngs-67 C:\Users\user\Documents\projet de SEG\deliv2\renters\renters\app\build\generated\res\pngs\debug
-com.example.renters.app-resValues-68 C:\Users\user\Documents\projet de SEG\deliv2\renters\renters\app\build\generated\res\resValues\debug
-com.example.renters.app-packageDebugResources-69 C:\Users\user\Documents\projet de SEG\deliv2\renters\renters\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.renters.app-packageDebugResources-70 C:\Users\user\Documents\projet de SEG\deliv2\renters\renters\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.renters.app-debug-71 C:\Users\user\Documents\projet de SEG\deliv2\renters\renters\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.renters.app-debug-72 C:\Users\user\Documents\projet de SEG\deliv2\renters\renters\app\src\debug\res
-com.example.renters.app-main-73 C:\Users\user\Documents\projet de SEG\deliv2\renters\renters\app\src\main\res
+com.example.renters.app-res-68 C:\Users\user\Documents\projet de SEG\deliv2\renters\renters\app\build\generated\res\processDebugGoogleServices
+com.example.renters.app-resValues-69 C:\Users\user\Documents\projet de SEG\deliv2\renters\renters\app\build\generated\res\resValues\debug
+com.example.renters.app-packageDebugResources-70 C:\Users\user\Documents\projet de SEG\deliv2\renters\renters\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.renters.app-packageDebugResources-71 C:\Users\user\Documents\projet de SEG\deliv2\renters\renters\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.renters.app-debug-72 C:\Users\user\Documents\projet de SEG\deliv2\renters\renters\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.renters.app-debug-73 C:\Users\user\Documents\projet de SEG\deliv2\renters\renters\app\src\debug\res
+com.example.renters.app-main-74 C:\Users\user\Documents\projet de SEG\deliv2\renters\renters\app\src\main\res

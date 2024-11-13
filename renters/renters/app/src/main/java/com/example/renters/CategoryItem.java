@@ -8,8 +8,10 @@ import androidx.recyclerview.widget.RecyclerView;
 public class CategoryItem extends RecyclerView.Adapter {
     private String name;
     private String description;
+    private String id;
 
-    public CategoryItem(String name, String description) {
+    public CategoryItem(String id, String name, String description) {
+        this.id = id;
         this.name = name;
         this.description = description;
     }
@@ -40,6 +42,15 @@ public class CategoryItem extends RecyclerView.Adapter {
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
 
     }
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+
 
     @Override
     public int getItemCount() {

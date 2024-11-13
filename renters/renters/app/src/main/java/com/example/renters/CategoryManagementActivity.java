@@ -11,7 +11,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
 
 public class CategoryManagementActivity extends AppCompatActivity {
     private EditText editTextCategoryName, editTextCategoryDescription;
@@ -25,6 +31,9 @@ public class CategoryManagementActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category_management);
+
+        FirebaseApp.initializeApp(this);
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
 
         // Link views with IDs
         editTextCategoryName = findViewById(R.id.editTextCategoryName);
@@ -44,9 +53,59 @@ public class CategoryManagementActivity extends AppCompatActivity {
         buttonAddCategory.setOnClickListener(v -> addCategory());
         buttonEditCategory.setOnClickListener(v -> editCategory());
         buttonDeleteCategory.setOnClickListener(v -> deleteCategory());
+
+        checkUserRole();
+
+        loadCategories();
+    }
+
+    private void loadCategories() {
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        // Get all categories from the "categories" collection
+        db.collection("categories")
+                .get()
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        categoryList.clear();
+                        for (QueryDocumentSnapshot document : task.getResult()) {
+                            String id = document.getId();  // Get the Firestore document ID
+                            String name = document.getString("name");
+                            String description = document.getString("description");
+
+                            // Create a CategoryItem object and add it to the list
+                            CategoryItem categoryItem = new CategoryItem(id, name, description);
+                            categoryList.add(categoryItem);
+                            Log.d("CategoryManagement", "Loaded category: " + name);
+                        }
+                        categoryAdapter.notifyDataSetChanged();
+                    } else {
+                        Log.e("CategoryManagement", "Error getting categories", task.getException());
+                        Toast.makeText(this, "Error getting categories", Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
+
+
+
+
+    private void checkUserRole() {
+        // Get the current user (this method depends on your app's logic for fetching the current user)
+        String userRole = getIntent().getStringExtra("USER_ROLE");
+
+        // If the user is a lessor, hide the "Add Category" button
+        if (userRole != null && userRole.equals("lessor")) {
+            // Hide the "Add Category" button for lessors
+            buttonAddCategory.setVisibility(View.GONE);
+        } else {
+            // Show the "Add Category" button for admins
+            buttonAddCategory.setVisibility(View.VISIBLE);
+        }
     }
 
     // Methode to handle category selection
+    // Admin adds category to Firestore
     private void addCategory() {
         String name = editTextCategoryName.getText().toString().trim();
         String description = editTextCategoryDescription.getText().toString().trim();
@@ -56,16 +115,27 @@ public class CategoryManagementActivity extends AppCompatActivity {
             return;
         }
 
-        CategoryItem newCategory = new CategoryItem(name, description);
-        categoryList.add(newCategory);
-        categoryAdapter.notifyDataSetChanged();
-        clearFields();
-        Toast.makeText(this, "Category added", Toast.LENGTH_SHORT).show();
-        Log.d("CategoryManagement", "Categories size: " + categoryList.size());
-        for (CategoryItem item : categoryList) {
-            Log.d("CategoryManagement", "Category: " + item.getName());
-        }
+        // Get a reference to Firestore
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        // Create a new category document
+        Map<String, String> categoryData = new HashMap<>();
+        categoryData.put("name", name);
+        categoryData.put("description", description);
+
+        // Add the category to Firestore
+        db.collection("categories").add(categoryData)
+                .addOnSuccessListener(documentReference -> {
+                    Log.d("CategoryManagement", "Category added with ID: " + documentReference.getId());
+                    Toast.makeText(this, "Category added", Toast.LENGTH_SHORT).show();
+                    clearFields();
+                })
+                .addOnFailureListener(e -> {
+                    Log.e("CategoryManagement", "Error adding category", e);
+                    Toast.makeText(this, "Error adding category", Toast.LENGTH_SHORT).show();
+                });
     }
+
 
     // Méthode pour modifier une catégorie
     private void editCategory() {
@@ -78,13 +148,26 @@ public class CategoryManagementActivity extends AppCompatActivity {
         String description = editTextCategoryDescription.getText().toString().trim();
 
         CategoryItem selectedCategory = categoryList.get(selectedCategoryPosition);
-        selectedCategory.setName(name);
-        selectedCategory.setDescription(description);
-        categoryAdapter.notifyItemChanged(selectedCategoryPosition);
-        clearFields();
-        selectedCategoryPosition = -1; // Réinitialiser la sélection
-        Toast.makeText(this, "Modified category.", Toast.LENGTH_SHORT).show();
+        String categoryId = selectedCategory.getId();  // Get the unique ID of the category
+
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        Map<String, Object> updates = new HashMap<>();
+        updates.put("name", name);
+        updates.put("description", description);
+
+        db.collection("categories").document(categoryId)
+                .update(updates)
+                .addOnSuccessListener(aVoid -> {
+                    // Update the category in the list
+                    categoryList.get(selectedCategoryPosition).setName(name);
+                    categoryList.get(selectedCategoryPosition).setDescription(description);
+                    categoryAdapter.notifyItemChanged(selectedCategoryPosition);
+                    Toast.makeText(this, "Category updated.", Toast.LENGTH_SHORT).show();
+                })
+                .addOnFailureListener(e -> Toast.makeText(this, "Error updating category", Toast.LENGTH_SHORT).show());
     }
+
+
 
     // Méthode pour supprimer une catégorie
     private void deleteCategory() {
@@ -93,12 +176,20 @@ public class CategoryManagementActivity extends AppCompatActivity {
             return;
         }
 
-        categoryList.remove(selectedCategoryPosition);
-        categoryAdapter.notifyItemRemoved(selectedCategoryPosition);
-        clearFields();
-        selectedCategoryPosition = -1; // Réinitialiser la sélection
-        Toast.makeText(this, "Category deleted.", Toast.LENGTH_SHORT).show();
+        CategoryItem selectedCategory = categoryList.get(selectedCategoryPosition);
+        String categoryId = selectedCategory.getId();  // Assuming you have a unique ID for each category
+
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        db.collection("categories").document(categoryId)
+                .delete()
+                .addOnSuccessListener(aVoid -> {
+                    categoryList.remove(selectedCategoryPosition);
+                    categoryAdapter.notifyItemRemoved(selectedCategoryPosition);
+                    Toast.makeText(this, "Category deleted.", Toast.LENGTH_SHORT).show();
+                })
+                .addOnFailureListener(e -> Toast.makeText(this, "Error deleting category", Toast.LENGTH_SHORT).show());
     }
+
 
     // Méthode pour effacer les champs d'entrée
     private void clearFields() {
@@ -114,4 +205,6 @@ public class CategoryManagementActivity extends AppCompatActivity {
         editTextCategoryName.setText(selectedCategory.getName());
         editTextCategoryDescription.setText(selectedCategory.getDescription());
     }
+
+
 }

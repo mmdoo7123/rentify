@@ -1,102 +1,102 @@
 [
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\content_lessor_sign_in.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\content_lessor_sign_in.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/fragment_first3.xml",
+        "source": "com.example.renters.app-main-74:/layout/fragment_first3.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\item_user.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\item_user.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/activity_welcome_screen_lessor.xml",
+        "source": "com.example.renters.app-main-74:/layout/activity_welcome_screen_lessor.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\roleselection.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\roleselection.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/fragment_first.xml",
+        "source": "com.example.renters.app-main-74:/layout/fragment_first.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\content_manage_users.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\content_manage_users.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/fragment_second2.xml",
+        "source": "com.example.renters.app-main-74:/layout/fragment_second2.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\activity_profiles_login.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_profiles_login.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/fragment_second.xml",
+        "source": "com.example.renters.app-main-74:/layout/fragment_second.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\activity_adminsignup.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_adminsignup.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/activity_lessor_page.xml",
+        "source": "com.example.renters.app-main-74:/layout/activity_lessor_page.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\fragment_second.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\fragment_second.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/activity_renter_signin.xml",
+        "source": "com.example.renters.app-main-74:/layout/activity_renter_signin.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\activity_renter_signin.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_renter_signin.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/activity_login.xml",
+        "source": "com.example.renters.app-main-74:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\activity_category_management.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_category_management.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/content_manage_users.xml",
+        "source": "com.example.renters.app-main-74:/layout/content_manage_users.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\fragment_first.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\fragment_first.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/item_category.xml",
+        "source": "com.example.renters.app-main-74:/layout/item_category.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\activity_lessor_sign_in.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_lessor_sign_in.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/activity_main.xml",
+        "source": "com.example.renters.app-main-74:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\fragment_first3.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\fragment_first3.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/activity_lessor_sign_in.xml",
+        "source": "com.example.renters.app-main-74:/layout/activity_lessor_sign_in.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_login.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/roleselection.xml",
+        "source": "com.example.renters.app-main-74:/layout/roleselection.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\fragment_second2.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\fragment_second2.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/activity_signup.xml",
+        "source": "com.example.renters.app-main-74:/layout/activity_signup.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\activity_renter_dashboard.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_renter_dashboard.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/fragment_first2.xml",
+        "source": "com.example.renters.app-main-74:/layout/fragment_first2.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\activity_lessor_page.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_lessor_page.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/item_user.xml",
+        "source": "com.example.renters.app-main-74:/layout/item_user.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\item_category.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\item_category.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/content_lessor_sign_in.xml",
+        "source": "com.example.renters.app-main-74:/layout/content_lessor_sign_in.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_main.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/activity_lessorsignup.xml",
+        "source": "com.example.renters.app-main-74:/layout/activity_lessorsignup.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\activity_manage_users.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_manage_users.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/activity_adminsignup.xml",
+        "source": "com.example.renters.app-main-74:/layout/activity_adminsignup.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\activity_admin_dashboard.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_admin_dashboard.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/activity_category_management.xml",
+        "source": "com.example.renters.app-main-74:/layout/activity_category_management.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\activity_lessorsignup.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_lessorsignup.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/activity_manage_users.xml",
+        "source": "com.example.renters.app-main-74:/layout/activity_manage_users.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\fragment_first2.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\fragment_first2.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/activity_admin_dashboard.xml",
+        "source": "com.example.renters.app-main-74:/layout/activity_admin_dashboard.xml"
     },
     {
-        "merged": "com.example.renters.app-mergeDebugResources-70:/layout/activity_admin_dashboard.xml",
-        "source": "com.example.renters.app-main-73:/layout/activity_admin_dashboard.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/activity_renter_dashboard.xml",
+        "source": "com.example.renters.app-main-74:/layout/activity_renter_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\fragment_second3.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\fragment_second3.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/fragment_second3.xml",
+        "source": "com.example.renters.app-main-74:/layout/fragment_second3.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-mergeDebugResources-70:\\layout\\activity_signup.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.example.renters.app-main-73:\\layout\\activity_signup.xml"
+        "merged": "com.example.renters.app-mergeDebugResources-71:/layout/activity_profiles_login.xml",
+        "source": "com.example.renters.app-main-74:/layout/activity_profiles_login.xml"
     }
 ]

@@ -44,6 +44,7 @@ id buttonSelectRenter
 id buttonSignUp
 id button_first
 id button_second
+id continueButton
 id editTextAdminEmail
 id editTextAdminPassword
 id editTextCategoryDescription
@@ -83,6 +84,8 @@ id textViewUserName
 id textview_first
 id textview_second
 id titleScreen
+id userName
+id welcomeText
 id welcomeTextView
 layout activity_admin_dashboard
 layout activity_adminsignup
@@ -97,6 +100,7 @@ layout activity_profiles_login
 layout activity_renter_dashboard
 layout activity_renter_signin
 layout activity_signup
+layout activity_welcome_screen_lessor
 layout content_lessor_sign_in
 layout content_manage_users
 layout fragment_first

@@ -52,7 +52,8 @@
                 android:id="@+id/editTextName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text" />
+                android:inputType="text"
+                android:minHeight="48dp" />
 
             <View
                 android:layout_width="wrap_content"
@@ -70,7 +71,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/baseline_check_24"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp" />
 
             <View
                 android:layout_width="wrap_content"
@@ -87,8 +89,9 @@
                 android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/baseline_remove_red_eye_24"
                 android:inputType="textPassword"
-                android:drawableEnd="@drawable/baseline_remove_red_eye_24"/>
+                android:minHeight="48dp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"

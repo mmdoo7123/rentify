@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_primary"
+    tools:context=".ProfilesLoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- Title for Login -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/my_secondary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="24dp" />
+
+        <!-- Text for Select Profile -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Profile Type"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:alpha="0.7" />
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="16dp" />
+
+        <!-- Renter Button -->
+        <LinearLayout
+            android:id="@+id/renterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:onClick="goToRenterLogin"
+            android:background="@color/my_secondary"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Renter Profile"
+                android:src="@drawable/renter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Renter"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Lessor Button -->
+        <LinearLayout
+            android:id="@+id/lessorButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:onClick="goToLessorLogin"
+            android:background="@color/my_secondary"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Lessor Profile"
+                android:src="@drawable/lessor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Lessor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- Admin Button -->
+        <LinearLayout
+            android:id="@+id/adminButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:cornerRadius="32dp"
+            android:background="@color/my_secondary"
+            android:onClick="goToAdminLogin"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Admin Profile"
+                android:src="@drawable/admin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Admin"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

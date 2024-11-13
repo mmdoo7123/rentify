@@ -3285,6 +3285,7 @@ id container
 id content
 id contentPanel
 id contiguous
+id continueButton
 id continuousVelocity
 id coordinator
 id cos
@@ -3688,6 +3689,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id userName
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3697,6 +3699,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id welcomeText
 id welcomeTextView
 id west
 id wide
@@ -3837,6 +3840,7 @@ layout activity_profiles_login
 layout activity_renter_dashboard
 layout activity_renter_signin
 layout activity_signup
+layout activity_welcome_screen_lessor
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout content_lessor_sign_in
@@ -4833,6 +4837,7 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
+style Theme_PlayCore_Transparent
 style Theme_Renters
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
