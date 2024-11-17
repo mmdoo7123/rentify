@@ -95,14 +95,14 @@ public class LessorSignin extends AppCompatActivity {
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         DocumentSnapshot document = task.getResult();
-                        if (document.exists()) {
+                        if (document.exists() && "lessor".equals(document.getString("role"))) {
                             Log.d("Firestore", "Lessor document retrieved: " + document.getData());
                             Intent intent = new Intent(LessorSignin.this, WelcomeScreenLessor.class);
                             intent.putExtra("USER_EMAIL", email);
                             startActivity(intent);
                             finish();
                         } else {
-                            Log.e("Firestore", "No Lessor document found for UID: " + uid);
+                            Log.e("Firestore", "Access Denied: Incorrect role or no document found for UID: " + uid);
                             Toast.makeText(LessorSignin.this, "Access Denied: You are not registered as a Lessor.", Toast.LENGTH_SHORT).show();
                             mAuth.signOut();
                         }
@@ -112,5 +112,6 @@ public class LessorSignin extends AppCompatActivity {
                     }
                 });
     }
+
 }
 

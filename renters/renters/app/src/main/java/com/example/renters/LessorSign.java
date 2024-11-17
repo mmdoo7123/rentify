@@ -90,6 +90,7 @@ public class LessorSign extends AppCompatActivity {
         Map<String, Object> lessor = new HashMap<>();
         lessor.put("name", name);
         lessor.put("email", email);
+        lessor.put("role", "lessor"); // Add the 'role' field to match Firestore rules
 
         db.collection("lessors").document(userId)
                 .set(lessor)
@@ -106,4 +107,5 @@ public class LessorSign extends AppCompatActivity {
                     }
                 });
     }
+
 }
