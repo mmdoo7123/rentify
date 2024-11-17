@@ -4,15 +4,17 @@ public class Item {
     private String id; // Firestore document ID
     private String name;
     private String description;
-    private String fee; // Fee for renting
+    private double fee; // Fee for renting
     private String timePeriod; // Rent duration
     private String category; // Category of the item
+    private String lessorId;
+    private String role;
 
     // Default constructor required for Firestore deserialization
     public Item() {
     }
 
-    public Item(String id, String name, String description, String fee, String timePeriod, String category) {
+    public Item(String id, String name, String description, double fee, String timePeriod, String category) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -46,11 +48,11 @@ public class Item {
         this.description = description;
     }
 
-    public String getFee() {
+    public double getFee() {
         return fee;
     }
 
-    public void setFee(String fee) {
+    public void setFee(double fee) {
         this.fee = fee;
     }
 
@@ -68,5 +70,19 @@ public class Item {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+    public String getLessorId() {
+        return lessorId; // Getter for lessorId
+    }
+
+    public void setLessorId(String lessorId) {
+        this.lessorId = lessorId; // Setter for lessorId
+    }
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.name = role;
     }
 }
