@@ -5,7 +5,6 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.renters.R; // Corrected the R import
 
 public class LessorProfileActivity extends AppCompatActivity {
 

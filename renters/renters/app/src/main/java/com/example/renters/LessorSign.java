@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -75,6 +76,7 @@ public class LessorSign extends AppCompatActivity {
                             // User created successfully, now save the lessor's name and email in Firestore
                             String userId = mAuth.getCurrentUser().getUid();
                             saveLessorInfo(userId, name, email);
+
                         } else {
                             // If sign up fails, display a message to the user
                             Toast.makeText(LessorSign.this, "Sign up failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -85,29 +87,22 @@ public class LessorSign extends AppCompatActivity {
 
     // Method to save lessor info in Firestore
     private void saveLessorInfo(String userId, String name, String email) {
-        // Create a new Lessor object
         Map<String, Object> lessor = new HashMap<>();
         lessor.put("name", name);
         lessor.put("email", email);
 
-        // Save the lessor's info in the "lessors" collection in Firestore
         db.collection("lessors").document(userId)
                 .set(lessor)
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()) {
-                            // Lessor info saved successfully
-                            Toast.makeText(LessorSign.this, "Sign up successful!", Toast.LENGTH_SHORT).show();
-
-                            // Redirect to lessor dashboard or another activity
-                            Intent intent = new Intent(LessorSign.this, LessorProfileActivity.class);
-                            startActivity(intent);
-                            finish(); // Close the current activity
-                        } else {
-                            // Handle any errors
-                            Toast.makeText(LessorSign.this, "Failed to save lessor info: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                        }
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        Log.d("Firestore", "Lessor document successfully created for userId: " + userId);
+                        Toast.makeText(LessorSign.this, "Sign up successful!", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(LessorSign.this, WelcomeScreenLessor.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        Log.e("Firestore", "Failed to create Lessor document: " + task.getException().getMessage());
+                        Toast.makeText(LessorSign.this, "Failed to save lessor info: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
     }

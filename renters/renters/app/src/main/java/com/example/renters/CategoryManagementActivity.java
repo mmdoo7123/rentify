@@ -62,34 +62,30 @@ public class CategoryManagementActivity extends AppCompatActivity {
     private void loadCategories() {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        // Get all categories from the "categories" collection
+        // Listen for real-time updates from the "categories" collection
         db.collection("categories")
-                .get()
-                .addOnCompleteListener(task -> {
-                    if (task.isSuccessful()) {
+                .addSnapshotListener((snapshots, error) -> {
+                    if (error != null) {
+                        Log.e("CategoryManagement", "Error listening to category changes", error);
+                        Toast.makeText(this, "Error listening to category changes.", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
+                    if (snapshots != null) {
                         categoryList.clear();
-                        for (QueryDocumentSnapshot document : task.getResult()) {
-                            String id = document.getId();  // Get the Firestore document ID
+                        for (QueryDocumentSnapshot document : snapshots) {
+                            String id = document.getId();  // Firestore document ID
                             String name = document.getString("name");
                             String description = document.getString("description");
 
-                            // Create a CategoryItem object and add it to the list
-                            CategoryItem categoryItem = new CategoryItem(id, name, description);
-                            categoryList.add(categoryItem);
+                            // Add the category to the list
+                            categoryList.add(new CategoryItem(id, name, description));
                             Log.d("CategoryManagement", "Loaded category: " + name);
                         }
                         categoryAdapter.notifyDataSetChanged();
-                    } else {
-                        Log.e("CategoryManagement", "Error getting categories", task.getException());
-                        Toast.makeText(this, "Error getting categories", Toast.LENGTH_SHORT).show();
                     }
                 });
     }
-
-
-
-
-
     private void checkUserRole() {
         // Get the current user (this method depends on your app's logic for fetching the current user)
         String userRole = getIntent().getStringExtra("USER_ROLE");

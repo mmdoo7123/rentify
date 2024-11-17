@@ -18,8 +18,7 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.AuthResult;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -37,7 +36,6 @@ public class AdminSignin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
 
         // Initialize Firebase Authentication and Firestore
         FirebaseApp.initializeApp(this);
@@ -74,50 +72,45 @@ public class AdminSignin extends AppCompatActivity {
             }
         });
     }
+
     private void loginUser(String email, String password) {
         mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign-in success, navigate to admin dashboard
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            Toast.makeText(AdminSignin.this, "Login successful!", Toast.LENGTH_SHORT).show();
-
-                            // Save user information in Firestore (Optional, if needed)
-                            saveUserInfoInFirestore(user);
-
-                            // Redirect to the admin dashboard
-                            Intent intent = new Intent(AdminSignin.this, AdminDashboardActivity.class);
-                            startActivity(intent);
-                            finish(); // Close the login activity
-                        } else {
-                            // Sign-in failed, display an error message
-                            Toast.makeText(AdminSignin.this, "Authentication failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                .addOnCompleteListener(this, task -> {
+                    if (task.isSuccessful()) {
+                        // Sign-in success
+                        FirebaseUser user = mAuth.getCurrentUser();
+                        if (user != null) {
+                            validateAdminRole(user); // Check if the user is an admin
                         }
+                    } else {
+                        // Sign-in failed
+                        Toast.makeText(AdminSignin.this, "Authentication failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
     }
 
-    // Save user information in Firestore
-    private void saveUserInfoInFirestore(FirebaseUser user) {
-        // Create a user data map
-        Map<String, Object> userData = new HashMap<>();
-        userData.put("email", user.getEmail());
-        userData.put("uid", user.getUid());
+    private void validateAdminRole(FirebaseUser user) {
+        String userId = user.getUid();
 
-        // Add user data to Firestore under a "users" collection
-        db.collection("users").document(user.getUid()).set(userData)
-                .addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Toast.makeText(AdminSignin.this, "User data saved in Firestore!", Toast.LENGTH_SHORT).show();
-                    }
-                })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(AdminSignin.this, "Failed to save user data in Firestore: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+        // Check if the user is in the "admins" collection
+        db.collection("admins").document(userId).get()
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        DocumentSnapshot document = task.getResult();
+                        if (document.exists()) {
+                            // Admin role validated, navigate to Admin Dashboard
+                            Toast.makeText(AdminSignin.this, "Welcome, Admin!", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(AdminSignin.this, AdminDashboardActivity.class);
+                            startActivity(intent);
+                            finish(); // Close the login activity
+                        } else {
+                            // Not an admin, sign out the user
+                            Toast.makeText(AdminSignin.this, "Access denied. You are not an admin.", Toast.LENGTH_SHORT).show();
+                            mAuth.signOut();
+                        }
+                    } else {
+                        // Error checking admin role
+                        Toast.makeText(AdminSignin.this, "Error validating admin role: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
     }

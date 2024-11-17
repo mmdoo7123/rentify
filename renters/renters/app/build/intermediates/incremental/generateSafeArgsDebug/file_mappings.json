@@ -1,1 +1,1 @@
-[{"navFile":"src\\main\\res\\navigation\\nav_graph.xml","javaFiles":["com.example.renters.FirstFragmentDirections"]},{"navFile":"src\\main\\res\\navigation\\nav_graph2.xml","javaFiles":["com.example.renters.First3FragmentDirections","com.example.renters.Second3FragmentDirections"]}]
+[{"navFile":"src\\main\\res\\navigation\\nav_graph.xml","javaFiles":["com.example.renters.First3FragmentDirections"]},{"navFile":"src\\main\\res\\navigation\\nav_graph2.xml","javaFiles":["com.example.renters.First3FragmentDirections","com.example.renters.Second3FragmentDirections"]}]

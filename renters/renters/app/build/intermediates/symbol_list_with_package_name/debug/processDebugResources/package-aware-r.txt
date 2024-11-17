@@ -3034,9 +3034,6 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable ic_other_sign_in
-drawable ic_passkey
-drawable ic_password
 drawable ic_search_black_24
 drawable lessor
 drawable m3_appbar_background
@@ -3236,11 +3233,14 @@ id btnLogout
 id btnPaymentInfo
 id btnViewRequests
 id buttonAddCategory
+id buttonAddItem
 id buttonAdminSignUp
 id buttonDelete
 id buttonDeleteCategory
+id buttonDeleteItem
 id buttonDisable
 id buttonEditCategory
+id buttonEditItem
 id buttonFirst
 id buttonGoToSignUp
 id buttonLogin
@@ -3337,9 +3337,13 @@ id editTextCategoryName
 id editTextEmail
 id editTextFullName
 id editTextInterests
+id editTextItemDescription
+id editTextItemFee
+id editTextItemName
 id editTextName
 id editTextPassword
 id editTextPhone
+id editTextRentalPeriod
 id editTextTextEmailAddress2
 id edit_query
 id edit_text_id
@@ -3405,6 +3409,7 @@ id invisible
 id inward
 id is_pooling_container_tag
 id italic
+id item_management_layout
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -3419,6 +3424,7 @@ id line1
 id line3
 id linear
 id linearLayout
+id linearLayoutActions
 id listMode
 id list_item
 id locale
@@ -3539,6 +3545,7 @@ id radio
 id ratio
 id rectangles
 id recyclerViewCategories
+id recyclerViewItems
 id recyclerViewUsers
 id renterButton
 id report_drawn
@@ -3609,6 +3616,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinnerCategories
 id spline
 id split_action_bar
 id spread
@@ -3654,7 +3662,11 @@ id textStart
 id textTop
 id textViewCategoryDescription
 id textViewCategoryName
+id textViewDescription
+id textViewFee
 id textViewGreeting
+id textViewName
+id textViewTimePeriod
 id textViewUserName
 id text_input_end_icon
 id text_input_error_icon
@@ -3870,6 +3882,8 @@ layout fragment_second3
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_category
+layout item_layout
+layout item_management
 layout item_user
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3966,8 +3980,6 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
-string android_credentials_TYPE_PASSWORD_CREDENTIAL
-string androidx_credentials_TYPE_PUBLIC_KEY_CREDENTIAL
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -4193,6 +4205,7 @@ string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
 string second_fragment_label
+string select_category
 string selected
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
@@ -4762,7 +4775,6 @@ style Theme_Design_Light
 style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
-style Theme_Hidden
 style Theme_Material3_Dark
 style Theme_Material3_Dark_BottomSheetDialog
 style Theme_Material3_Dark_Dialog
@@ -4837,7 +4849,6 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
-style Theme_PlayCore_Transparent
 style Theme_Renters
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
@@ -5497,5 +5508,4 @@ styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration
 styleable include constraintSet
 xml backup_rules
 xml data_extraction_rules
-xml ga_ad_services_config
 xml image_share_filepaths

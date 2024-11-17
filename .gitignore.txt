@@ -1,0 +1,15 @@
+# Ignore build files and intermediate directories
+*.apk
+*.lock
+*.bin
+*.class
+*.jar
+*.dex
+*.flat
+*.json
+*.xml
+*.arsc
+.gradle/
+.idea/
+build/
+out/

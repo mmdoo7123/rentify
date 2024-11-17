@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.renters.app-mergeDebugResources-70:/values-w1240dp-v13/values-w1240dp-v13.xml",
+            "outputFile": "com.example.renters.app-mergeDebugResources-63:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\user\\Documents\\projet de SEG\\deliv2\\renters\\renters\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "source": "C:\\Users\\mahmo\\seg2105f24-project-group_project_21\\renters\\renters\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
