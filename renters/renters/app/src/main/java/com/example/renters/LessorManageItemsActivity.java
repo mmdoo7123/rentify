@@ -24,6 +24,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+//Imports to handle photo upload
+import android.content.Intent;
+import android.net.Uri;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
+
+
 public class LessorManageItemsActivity extends AppCompatActivity {
 
     private EditText editTextItemName, editTextItemDescription, editTextFee, editTextTimePeriod;
@@ -38,6 +46,12 @@ public class LessorManageItemsActivity extends AppCompatActivity {
 
     private String selectedCategory;
     private int selectedItemPosition = -1;
+
+    //Private variable for image upload
+    private static final int PICK_IMAGE_REQUEST = 1;
+    private Uri imageUri;
+    private StorageReference storageReference;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +75,9 @@ public class LessorManageItemsActivity extends AppCompatActivity {
 
         // Set button actions
         setupButtonActions();
+
+        //initialize firebase storage for images
+        storageReference = FirebaseStorage.getInstance().getReference("item_photos");
     }
 
     private void initUIComponents() {
@@ -82,11 +99,122 @@ public class LessorManageItemsActivity extends AppCompatActivity {
         Button buttonAddItem = findViewById(R.id.buttonAddItem);
         Button buttonEditItem = findViewById(R.id.buttonEditItem);
         Button buttonDeleteItem = findViewById(R.id.buttonDeleteItem);
+        Button buttonUploadPhoto = findViewById(R.id.buttonUploadPhoto);
 
         buttonAddItem.setOnClickListener(v -> addItem());
         buttonEditItem.setOnClickListener(v -> editItem());
         buttonDeleteItem.setOnClickListener(v -> deleteItem());
+        buttonUploadPhoto.setOnClickListener(v -> openFileChooser());
     }
+
+    private void addItem() {
+        // Retrieve inputs from UI components
+        String name = editTextItemName.getText().toString().trim();
+        String description = editTextItemDescription.getText().toString().trim();
+        String feeInput = editTextFee.getText().toString().trim();
+        String timePeriod = editTextTimePeriod.getText().toString().trim();
+        selectedCategory = (String) spinnerCategories.getSelectedItem();
+
+        // Validate inputs
+        if (name.isEmpty() || feeInput.isEmpty() || timePeriod.isEmpty() || selectedCategory == null) {
+            Toast.makeText(this, "Please fill in all required fields.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        double fee;
+        try {
+            fee = Double.parseDouble(feeInput);
+        } catch (NumberFormatException e) {
+            Toast.makeText(this, "Fee must be a valid number.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        String lessorId = mAuth.getCurrentUser().getUid();
+        if (lessorId == null || lessorId.isEmpty()) {
+            Toast.makeText(this, "Authentication error. Please log in again.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Check if a photo has been uploaded
+        if (imageUri == null) {
+            Toast.makeText(this, "Please upload a photo of the item.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Upload the photo to Firebase Storage
+        StorageReference fileReference = storageReference.child(System.currentTimeMillis() + ".jpg");
+        fileReference.putFile(imageUri)
+                .addOnSuccessListener(taskSnapshot -> fileReference.getDownloadUrl()
+                        .addOnSuccessListener(uri -> {
+                            // Photo uploaded successfully, save the item details with the photo URL
+                            String photoUrl = uri.toString();
+
+                            // Create a map to store item data
+                            Map<String, Object> itemData = new HashMap<>();
+                            itemData.put("name", name);
+                            itemData.put("description", description);
+                            itemData.put("fee", fee);
+                            itemData.put("timePeriod", timePeriod);
+                            itemData.put("category", selectedCategory);
+                            itemData.put("lessorId", lessorId);
+                            itemData.put("photoUrl", photoUrl);
+
+                            // Save the item to Firestore
+                            db.collection("items")
+                                    .add(itemData)
+                                    .addOnSuccessListener(documentReference -> {
+                                        Toast.makeText(this, "Item added successfully.", Toast.LENGTH_SHORT).show();
+                                        loadItems(); // Refresh the item list
+                                        clearFields(); // Clear input fields
+                                    })
+                                    .addOnFailureListener(e -> {
+                                        Log.e("LessorManageItems", "Failed to add item to Firestore: ", e);
+                                        Toast.makeText(this, "Failed to add item: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                                    });
+                        }))
+                .addOnFailureListener(e -> {
+                    // Handle photo upload failure
+                    Log.e("LessorManageItems", "Failed to upload photo: ", e);
+                    Toast.makeText(this, "Failed to upload photo: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                });
+    }
+
+
+    //for image handling
+    private void openFileChooser() {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(intent, PICK_IMAGE_REQUEST);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
+            imageUri = data.getData();
+            uploadPhoto();
+        }
+    }
+
+    //upload photo to firebase storage
+    private void uploadPhoto() {
+        if (imageUri != null) {
+            StorageReference fileReference = storageReference.child(System.currentTimeMillis() + ".jpg");
+            fileReference.putFile(imageUri)
+                    .addOnSuccessListener(taskSnapshot -> fileReference.getDownloadUrl()
+                            .addOnSuccessListener(uri -> {
+                                String photoUrl = uri.toString();
+                                savePhotoUrlToItem(photoUrl);
+                                showToast("Photo uploaded successfully.");
+                            }))
+                    .addOnFailureListener(e -> showToast("Failed to upload photo: " + e.getMessage()));
+        } else {
+            showToast("No file selected.");
+        }
+    }
+
+
 
     private void loadCategories() {
         db.collection("categories")
@@ -138,7 +266,7 @@ public class LessorManageItemsActivity extends AppCompatActivity {
                 });
     }
 
-    private void addItem() {
+    private void savePhotoUrlToItem(String photoUrl) {
         String name = editTextItemName.getText().toString().trim();
         String description = editTextItemDescription.getText().toString().trim();
         String feeInput = editTextFee.getText().toString().trim();
@@ -146,7 +274,7 @@ public class LessorManageItemsActivity extends AppCompatActivity {
         selectedCategory = (String) spinnerCategories.getSelectedItem();
 
         if (name.isEmpty() || feeInput.isEmpty() || timePeriod.isEmpty() || selectedCategory == null) {
-            Toast.makeText(this, "Please fill in all required fields.", LENGTH_SHORT).show();
+            showToast("Please fill in all required fields.");
             return;
         }
 
@@ -154,14 +282,13 @@ public class LessorManageItemsActivity extends AppCompatActivity {
         try {
             fee = Double.parseDouble(feeInput);
         } catch (NumberFormatException e) {
-            Toast.makeText(this, "Fee must be a valid number.", LENGTH_SHORT).show();
+            showToast("Fee must be a valid number.");
             return;
         }
 
         String lessorId = mAuth.getCurrentUser().getUid();
-
         if (lessorId == null || lessorId.isEmpty()) {
-            Toast.makeText(this, "Authentication error. Please log in again.", LENGTH_SHORT).show();
+            showToast("Authentication error. Please log in again.");
             return;
         }
 
@@ -172,20 +299,18 @@ public class LessorManageItemsActivity extends AppCompatActivity {
         itemData.put("timePeriod", timePeriod);
         itemData.put("category", selectedCategory);
         itemData.put("lessorId", lessorId);
-        itemData.put("role", "lessor"); // Add role for validation in Firestore rules
+        itemData.put("photoUrl", photoUrl);
 
         db.collection("items")
                 .add(itemData)
                 .addOnSuccessListener(documentReference -> {
-                    Toast.makeText(this, "Item added successfully.", LENGTH_SHORT).show();
+                    showToast("Item added successfully.");
                     loadItems();
                     clearFields();
                 })
-                .addOnFailureListener(e -> {
-                    Log.e("LessorManageItems", "Failed to add item to Firestore: ", e);
-                    Toast.makeText(this, "Failed to add item: " + e.getMessage(), LENGTH_SHORT).show();
-                });
+                .addOnFailureListener(e -> showToast("Failed to add item: " + e.getMessage()));
     }
+
 
     private double parseDouble(String feeInput) {
         try {

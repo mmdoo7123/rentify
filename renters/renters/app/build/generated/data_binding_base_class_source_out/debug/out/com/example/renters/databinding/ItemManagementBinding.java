@@ -33,6 +33,9 @@ public final class ItemManagementBinding implements ViewBinding {
   public final Button buttonEditItem;
 
   @NonNull
+  public final Button buttonUploadPhoto;
+
+  @NonNull
   public final EditText editTextItemDescription;
 
   @NonNull
@@ -58,14 +61,16 @@ public final class ItemManagementBinding implements ViewBinding {
 
   private ItemManagementBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonAddItem,
       @NonNull Button buttonDeleteItem, @NonNull Button buttonEditItem,
-      @NonNull EditText editTextItemDescription, @NonNull EditText editTextItemFee,
-      @NonNull EditText editTextItemName, @NonNull EditText editTextRentalPeriod,
-      @NonNull ConstraintLayout itemManagementLayout, @NonNull LinearLayout linearLayoutActions,
-      @NonNull RecyclerView recyclerViewItems, @NonNull Spinner spinnerCategories) {
+      @NonNull Button buttonUploadPhoto, @NonNull EditText editTextItemDescription,
+      @NonNull EditText editTextItemFee, @NonNull EditText editTextItemName,
+      @NonNull EditText editTextRentalPeriod, @NonNull ConstraintLayout itemManagementLayout,
+      @NonNull LinearLayout linearLayoutActions, @NonNull RecyclerView recyclerViewItems,
+      @NonNull Spinner spinnerCategories) {
     this.rootView = rootView;
     this.buttonAddItem = buttonAddItem;
     this.buttonDeleteItem = buttonDeleteItem;
     this.buttonEditItem = buttonEditItem;
+    this.buttonUploadPhoto = buttonUploadPhoto;
     this.editTextItemDescription = editTextItemDescription;
     this.editTextItemFee = editTextItemFee;
     this.editTextItemName = editTextItemName;
@@ -121,6 +126,12 @@ public final class ItemManagementBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.buttonUploadPhoto;
+      Button buttonUploadPhoto = ViewBindings.findChildViewById(rootView, id);
+      if (buttonUploadPhoto == null) {
+        break missingId;
+      }
+
       id = R.id.editTextItemDescription;
       EditText editTextItemDescription = ViewBindings.findChildViewById(rootView, id);
       if (editTextItemDescription == null) {
@@ -166,9 +177,9 @@ public final class ItemManagementBinding implements ViewBinding {
       }
 
       return new ItemManagementBinding((ConstraintLayout) rootView, buttonAddItem, buttonDeleteItem,
-          buttonEditItem, editTextItemDescription, editTextItemFee, editTextItemName,
-          editTextRentalPeriod, itemManagementLayout, linearLayoutActions, recyclerViewItems,
-          spinnerCategories);
+          buttonEditItem, buttonUploadPhoto, editTextItemDescription, editTextItemFee,
+          editTextItemName, editTextRentalPeriod, itemManagementLayout, linearLayoutActions,
+          recyclerViewItems, spinnerCategories);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

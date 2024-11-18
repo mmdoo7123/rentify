@@ -3252,6 +3252,7 @@ id buttonSelectAdmin
 id buttonSelectLessor
 id buttonSelectRenter
 id buttonSignUp
+id buttonUploadPhoto
 id button_first
 id button_second
 id cache_measures
