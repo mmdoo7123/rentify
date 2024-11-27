@@ -6,8 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.renters.R; // Corrected the R import
-
 public class RoleSelectionActivity extends AppCompatActivity {
 
     @Override
@@ -33,7 +31,7 @@ public class RoleSelectionActivity extends AppCompatActivity {
         buttonSelectLessor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RoleSelectionActivity.this, LessorSign.class);
+                Intent intent = new Intent(RoleSelectionActivity.this, LessorSignUp.class);
                 startActivity(intent);
             }
         });

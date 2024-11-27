@@ -2,7 +2,6 @@ package com.example.renters;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -13,7 +12,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -65,7 +63,7 @@ public class LessorSignin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to Lessor Sign-Up Activity
-                Intent intent = new Intent(LessorSignin.this, LessorSign.class);
+                Intent intent = new Intent(LessorSignin.this, LessorSignUp.class);
                 startActivity(intent);
             }
         });
@@ -97,7 +95,7 @@ public class LessorSignin extends AppCompatActivity {
                         DocumentSnapshot document = task.getResult();
                         if (document.exists() && "lessor".equals(document.getString("role"))) {
                             Log.d("Firestore", "Lessor document retrieved: " + document.getData());
-                            Intent intent = new Intent(LessorSignin.this, WelcomeScreenLessor.class);
+                            Intent intent = new Intent(LessorSignin.this, ItemOrRequestSelectionActivity.class);
                             intent.putExtra("USER_EMAIL", email);
                             startActivity(intent);
                             finish();

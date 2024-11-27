@@ -5,7 +5,10 @@
     <color name="my_secondary">#32abb4</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="fab_margin">16dp</dimen>
+    <string name="add_item">Add Item</string>
     <string name="app_name">Renters</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="edit_item">Edit Item</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="gcm_defaultSenderId" translatable="false">643207711082</string>
     <string name="google_api_key" translatable="false">AIzaSyCFeDX_zA0zW53ynJSOpCzYM9oWX9PtNSk</string>
@@ -18,6 +21,7 @@
     <string name="project_id" translatable="false">rentify-c20de</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="select_category">Select Category</string>
+    <string name="upload_photo">Upload Photo</string>
     <style name="Base.Theme.Renters" parent="Theme.Material3.DayNight.NoActionBar">
         
         

@@ -32,6 +32,10 @@
         "source": "com.example.renters.app-main-67:/layout/activity_profiles_login.xml"
     },
     {
+        "merged": "com.example.renters.app-mergeDebugResources-64:/layout/activity_lessor_requests.xml",
+        "source": "com.example.renters.app-main-67:/layout/activity_lessor_requests.xml"
+    },
+    {
         "merged": "com.example.renters.app-mergeDebugResources-64:/layout/activity_signup.xml",
         "source": "com.example.renters.app-main-67:/layout/activity_signup.xml"
     },
@@ -64,12 +68,12 @@
         "source": "com.example.renters.app-main-67:/layout/content_lessor_sign_in.xml"
     },
     {
-        "merged": "com.example.renters.app-mergeDebugResources-64:/layout/activity_main.xml",
-        "source": "com.example.renters.app-main-67:/layout/activity_main.xml"
-    },
-    {
         "merged": "com.example.renters.app-mergeDebugResources-64:/layout/fragment_first2.xml",
         "source": "com.example.renters.app-main-67:/layout/fragment_first2.xml"
+    },
+    {
+        "merged": "com.example.renters.app-mergeDebugResources-64:/layout/item_request.xml",
+        "source": "com.example.renters.app-main-67:/layout/item_request.xml"
     },
     {
         "merged": "com.example.renters.app-mergeDebugResources-64:/layout/activity_login.xml",
@@ -84,6 +88,10 @@
         "source": "com.example.renters.app-main-67:/layout/item_category.xml"
     },
     {
+        "merged": "com.example.renters.app-mergeDebugResources-64:/layout/activity_rentor_signup.xml",
+        "source": "com.example.renters.app-main-67:/layout/activity_rentor_signup.xml"
+    },
+    {
         "merged": "com.example.renters.app-mergeDebugResources-64:/layout/activity_renter_dashboard.xml",
         "source": "com.example.renters.app-main-67:/layout/activity_renter_dashboard.xml"
     },
@@ -94,6 +102,14 @@
     {
         "merged": "com.example.renters.app-mergeDebugResources-64:/layout/activity_lessor_page.xml",
         "source": "com.example.renters.app-main-67:/layout/activity_lessor_page.xml"
+    },
+    {
+        "merged": "com.example.renters.app-mergeDebugResources-64:/layout/item_detail_activity.xml",
+        "source": "com.example.renters.app-main-67:/layout/item_detail_activity.xml"
+    },
+    {
+        "merged": "com.example.renters.app-mergeDebugResources-64:/layout/item_or_request_selection.xml",
+        "source": "com.example.renters.app-main-67:/layout/item_or_request_selection.xml"
     },
     {
         "merged": "com.example.renters.app-mergeDebugResources-64:/layout/activity_lessor_sign_in.xml",
