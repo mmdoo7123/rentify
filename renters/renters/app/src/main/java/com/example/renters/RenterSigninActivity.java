@@ -58,7 +58,7 @@ public class RenterSigninActivity extends AppCompatActivity {
         buttonGoToSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RenterSigninActivity.this, MainActivity.class);
+                Intent intent = new Intent(RenterSigninActivity.this, RenterSignUp.class);
                 startActivity(intent);
             }
         });
@@ -72,7 +72,7 @@ public class RenterSigninActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Sign-in success, navigate to renter dashboard
                             FirebaseUser user = mAuth.getCurrentUser();
-                            Intent intent = new Intent(RenterSigninActivity.this, RenterDashboardActivity.class); // Assuming you have a RenterDashboardActivity
+                            Intent intent = new Intent(RenterSigninActivity.this, RenterDashboardActivity.class);
                             startActivity(intent);
                             finish(); // Close the login activity
                         } else {

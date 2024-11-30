@@ -5,8 +5,6 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.renters.R; // Corrected the R import
-
 public class SigninActivity extends AppCompatActivity {
 
     private String userType;
@@ -26,7 +24,7 @@ public class SigninActivity extends AppCompatActivity {
 
         // Back to signup button click listener
         findViewById(R.id.goToSignUp).setOnClickListener(view -> {
-            Intent intent = new Intent(SigninActivity.this, LessorSign.class);
+            Intent intent = new Intent(SigninActivity.this, LessorSignUp.class);
             startActivity(intent);
         });
     }

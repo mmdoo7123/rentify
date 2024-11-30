@@ -29,7 +29,7 @@ public class LessorProfileActivity extends AppCompatActivity {
         });
 
         findViewById(R.id.btnLogout).setOnClickListener(view -> {
-            Intent intent = new Intent(LessorProfileActivity.this, LessorSign.class);
+            Intent intent = new Intent(LessorProfileActivity.this, LessorSignUp.class);
             startActivity(intent);
             finish(); // Close the profile page
         });

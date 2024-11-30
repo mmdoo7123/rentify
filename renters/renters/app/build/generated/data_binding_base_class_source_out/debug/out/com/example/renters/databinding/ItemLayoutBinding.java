@@ -20,6 +20,9 @@ public final class ItemLayoutBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final TextView textViewCategory;
+
+  @NonNull
   public final TextView textViewDescription;
 
   @NonNull
@@ -31,10 +34,11 @@ public final class ItemLayoutBinding implements ViewBinding {
   @NonNull
   public final TextView textViewTimePeriod;
 
-  private ItemLayoutBinding(@NonNull LinearLayout rootView, @NonNull TextView textViewDescription,
-      @NonNull TextView textViewFee, @NonNull TextView textViewName,
-      @NonNull TextView textViewTimePeriod) {
+  private ItemLayoutBinding(@NonNull LinearLayout rootView, @NonNull TextView textViewCategory,
+      @NonNull TextView textViewDescription, @NonNull TextView textViewFee,
+      @NonNull TextView textViewName, @NonNull TextView textViewTimePeriod) {
     this.rootView = rootView;
+    this.textViewCategory = textViewCategory;
     this.textViewDescription = textViewDescription;
     this.textViewFee = textViewFee;
     this.textViewName = textViewName;
@@ -68,6 +72,12 @@ public final class ItemLayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.textViewCategory;
+      TextView textViewCategory = ViewBindings.findChildViewById(rootView, id);
+      if (textViewCategory == null) {
+        break missingId;
+      }
+
       id = R.id.textViewDescription;
       TextView textViewDescription = ViewBindings.findChildViewById(rootView, id);
       if (textViewDescription == null) {
@@ -92,8 +102,8 @@ public final class ItemLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemLayoutBinding((LinearLayout) rootView, textViewDescription, textViewFee,
-          textViewName, textViewTimePeriod);
+      return new ItemLayoutBinding((LinearLayout) rootView, textViewCategory, textViewDescription,
+          textViewFee, textViewName, textViewTimePeriod);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

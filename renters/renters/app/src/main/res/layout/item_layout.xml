@@ -33,4 +33,11 @@
         android:layout_height="wrap_content"
         android:text="Duration"
         android:textSize="14sp" />
+    <!-- Added Category TextView -->
+    <TextView
+        android:id="@+id/textViewCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="14sp" />
 </LinearLayout>
