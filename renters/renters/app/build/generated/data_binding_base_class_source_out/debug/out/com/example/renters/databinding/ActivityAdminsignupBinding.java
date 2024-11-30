@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,6 +26,9 @@ public final class ActivityAdminsignupBinding implements ViewBinding {
   public final TextView AdminTextView;
 
   @NonNull
+  public final ImageView backgroundImage;
+
+  @NonNull
   public final Button buttonAdminSignUp;
 
   @NonNull
@@ -34,10 +38,12 @@ public final class ActivityAdminsignupBinding implements ViewBinding {
   public final EditText editTextAdminPassword;
 
   private ActivityAdminsignupBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView AdminTextView, @NonNull Button buttonAdminSignUp,
-      @NonNull EditText editTextAdminEmail, @NonNull EditText editTextAdminPassword) {
+      @NonNull TextView AdminTextView, @NonNull ImageView backgroundImage,
+      @NonNull Button buttonAdminSignUp, @NonNull EditText editTextAdminEmail,
+      @NonNull EditText editTextAdminPassword) {
     this.rootView = rootView;
     this.AdminTextView = AdminTextView;
+    this.backgroundImage = backgroundImage;
     this.buttonAdminSignUp = buttonAdminSignUp;
     this.editTextAdminEmail = editTextAdminEmail;
     this.editTextAdminPassword = editTextAdminPassword;
@@ -76,6 +82,12 @@ public final class ActivityAdminsignupBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.backgroundImage;
+      ImageView backgroundImage = ViewBindings.findChildViewById(rootView, id);
+      if (backgroundImage == null) {
+        break missingId;
+      }
+
       id = R.id.buttonAdminSignUp;
       Button buttonAdminSignUp = ViewBindings.findChildViewById(rootView, id);
       if (buttonAdminSignUp == null) {
@@ -95,7 +107,7 @@ public final class ActivityAdminsignupBinding implements ViewBinding {
       }
 
       return new ActivityAdminsignupBinding((ConstraintLayout) rootView, AdminTextView,
-          buttonAdminSignUp, editTextAdminEmail, editTextAdminPassword);
+          backgroundImage, buttonAdminSignUp, editTextAdminEmail, editTextAdminPassword);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

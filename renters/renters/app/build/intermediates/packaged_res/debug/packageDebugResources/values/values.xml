@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="my_primary">#ddfdff</color>
     <color name="my_secondary">#32abb4</color>
+    <color name="my_tertiary">#005559</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="fab_margin">16dp</dimen>
     <string name="app_name">Renters</string>

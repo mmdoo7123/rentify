@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -21,25 +23,30 @@ public final class ActivityLessorSignInBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button buttonGoToSignUp;
+  public final TextView LoginTextView;
 
   @NonNull
-  public final Button buttonLogin;
+  public final ImageView backgroundImage;
 
   @NonNull
-  public final EditText editTextEmail;
+  public final Button buttonAdminLogin;
 
   @NonNull
-  public final EditText editTextPassword;
+  public final EditText editTextAdminEmail;
+
+  @NonNull
+  public final EditText editTextAdminPassword;
 
   private ActivityLessorSignInBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button buttonGoToSignUp, @NonNull Button buttonLogin,
-      @NonNull EditText editTextEmail, @NonNull EditText editTextPassword) {
+      @NonNull TextView LoginTextView, @NonNull ImageView backgroundImage,
+      @NonNull Button buttonAdminLogin, @NonNull EditText editTextAdminEmail,
+      @NonNull EditText editTextAdminPassword) {
     this.rootView = rootView;
-    this.buttonGoToSignUp = buttonGoToSignUp;
-    this.buttonLogin = buttonLogin;
-    this.editTextEmail = editTextEmail;
-    this.editTextPassword = editTextPassword;
+    this.LoginTextView = LoginTextView;
+    this.backgroundImage = backgroundImage;
+    this.buttonAdminLogin = buttonAdminLogin;
+    this.editTextAdminEmail = editTextAdminEmail;
+    this.editTextAdminPassword = editTextAdminPassword;
   }
 
   @Override
@@ -69,32 +76,38 @@ public final class ActivityLessorSignInBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.buttonGoToSignUp;
-      Button buttonGoToSignUp = ViewBindings.findChildViewById(rootView, id);
-      if (buttonGoToSignUp == null) {
+      id = R.id.LoginTextView;
+      TextView LoginTextView = ViewBindings.findChildViewById(rootView, id);
+      if (LoginTextView == null) {
         break missingId;
       }
 
-      id = R.id.buttonLogin;
-      Button buttonLogin = ViewBindings.findChildViewById(rootView, id);
-      if (buttonLogin == null) {
+      id = R.id.backgroundImage;
+      ImageView backgroundImage = ViewBindings.findChildViewById(rootView, id);
+      if (backgroundImage == null) {
         break missingId;
       }
 
-      id = R.id.editTextEmail;
-      EditText editTextEmail = ViewBindings.findChildViewById(rootView, id);
-      if (editTextEmail == null) {
+      id = R.id.buttonAdminLogin;
+      Button buttonAdminLogin = ViewBindings.findChildViewById(rootView, id);
+      if (buttonAdminLogin == null) {
         break missingId;
       }
 
-      id = R.id.editTextPassword;
-      EditText editTextPassword = ViewBindings.findChildViewById(rootView, id);
-      if (editTextPassword == null) {
+      id = R.id.editTextAdminEmail;
+      EditText editTextAdminEmail = ViewBindings.findChildViewById(rootView, id);
+      if (editTextAdminEmail == null) {
         break missingId;
       }
 
-      return new ActivityLessorSignInBinding((ConstraintLayout) rootView, buttonGoToSignUp,
-          buttonLogin, editTextEmail, editTextPassword);
+      id = R.id.editTextAdminPassword;
+      EditText editTextAdminPassword = ViewBindings.findChildViewById(rootView, id);
+      if (editTextAdminPassword == null) {
+        break missingId;
+      }
+
+      return new ActivityLessorSignInBinding((ConstraintLayout) rootView, LoginTextView,
+          backgroundImage, buttonAdminLogin, editTextAdminEmail, editTextAdminPassword);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -2090,6 +2090,7 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color my_primary
 color my_secondary
+color my_tertiary
 color notification_action_color_filter
 color notification_icon_bg_color
 color primary_dark_material_dark
@@ -3120,6 +3121,7 @@ id BOTTOM_START
 id CTRL
 id FUNCTION
 id First3Fragment
+id LoginTextView
 id META
 id NO_DEBUG
 id SHIFT
@@ -3212,6 +3214,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backgroundImage
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3234,6 +3237,7 @@ id btnPaymentInfo
 id btnViewRequests
 id buttonAddCategory
 id buttonAddItem
+id buttonAdminLogin
 id buttonAdminSignUp
 id buttonDelete
 id buttonDeleteCategory
@@ -3284,6 +3288,7 @@ id constraint
 id consume_window_insets_tag
 id container
 id content
+id contentLayout
 id contentPanel
 id contiguous
 id continueButton

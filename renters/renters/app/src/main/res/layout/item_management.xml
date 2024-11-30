@@ -6,6 +6,7 @@
     android:id="@+id/item_management_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/my_primary"
     tools:context=".LessorManageItemsActivity">
 
     <!-- Item Name -->
@@ -13,6 +14,7 @@
         android:id="@+id/editTextItemName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:textColor="@color/my_secondary"
         android:hint="Item Name"
         android:inputType="textPersonName"
         android:layout_marginBottom="8dp"
@@ -98,8 +100,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Add Item"
-            android:textColor="#141414" />
+            android:backgroundTint="@color/my_secondary"
+            android:textColor="@color/white"
+            android:text="Add Item" />
 
         <!-- Edit Item Button -->
         <Button
@@ -108,7 +111,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Edit Item"
-            android:textColor="#090909" />
+            android:backgroundTint="@color/my_secondary"
+            android:textColor="@color/white"
+            />
 
         <!-- Delete Item Button -->
         <Button
@@ -117,7 +122,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Delete Item"
-            android:textColor="#0D0C0C" />
+            android:backgroundTint="@color/my_secondary"
+            android:textColor="@color/white" />
 
         <!-- Button for selecting and uploading a photo -->
         <Button
@@ -126,7 +132,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Upload Photo"
-            android:textColor="#090909"
+            android:backgroundTint="@color/my_secondary"
+            android:textColor="@color/white"
             android:layout_margin="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

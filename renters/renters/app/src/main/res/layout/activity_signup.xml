@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,11 +6,26 @@
     android:background="@color/my_primary"
     tools:context=".SigninActivity">
 
+    <!-- Logo ImageView -->
+
+    <!-- Content LinearLayout -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="315dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/rentify" />
+
     <LinearLayout
+        android:id="@+id/contentLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="28dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="16dp"
         android:gravity="center">
 
         <!-- Login Title -->
@@ -99,8 +113,9 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Login"
-            android:textColor="@color/my_secondary"
+            android:textColor="@color/white"
             app:cornerRadius="32dp"
+            android:backgroundTint="@color/my_secondary"
             android:onClick="handleLogin" />
 
         <View

@@ -3,6 +3,7 @@ local
 color black
 color my_primary
 color my_secondary
+color my_tertiary
 color white
 dimen fab_margin
 drawable admin
@@ -16,18 +17,21 @@ drawable renter
 drawable rentify
 id AdminTextView
 id First3Fragment
+id LoginTextView
 id Second3Fragment
 id action_First3Fragment_to_Second3Fragment
 id action_Second3Fragment_to_First3Fragment
 id action_firstFragment_to_secondFragment
 id adminButton
 id already_have_account
+id backgroundImage
 id btnChangeItems
 id btnLogout
 id btnPaymentInfo
 id btnViewRequests
 id buttonAddCategory
 id buttonAddItem
+id buttonAdminLogin
 id buttonAdminSignUp
 id buttonDelete
 id buttonDeleteCategory
@@ -48,6 +52,7 @@ id buttonSignUp
 id buttonUploadPhoto
 id button_first
 id button_second
+id contentLayout
 id continueButton
 id editTextAdminEmail
 id editTextAdminPassword

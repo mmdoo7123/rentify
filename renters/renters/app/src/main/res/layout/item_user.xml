@@ -11,6 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="User Name"
+        android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@id/buttonDisable"
@@ -22,6 +23,8 @@
         android:layout_height="wrap_content"
         android:text="Disable"
         app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/my_secondary"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@id/buttonDelete"
         android:layout_marginEnd="8dp"/>
 
@@ -31,5 +34,7 @@
         android:layout_height="wrap_content"
         android:text="Delete"
         app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/my_secondary"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
