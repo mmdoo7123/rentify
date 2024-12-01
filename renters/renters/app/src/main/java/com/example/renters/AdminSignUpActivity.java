@@ -40,7 +40,28 @@ public class AdminSignUpActivity extends AppCompatActivity {
         editTextAdminEmail = findViewById(R.id.editTextAdminEmail);
         editTextAdminPassword = findViewById(R.id.editTextAdminPassword);
         buttonAdminSignUp = findViewById(R.id.buttonAdminSignUp);
+        // Add TextWatcher to detect "admin" input
+        editTextAdminEmail.addTextChangedListener(new android.text.TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                // No action needed before text changes
+            }
 
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                // Check if the input is "admin" (case insensitive)
+                if (s.toString().equalsIgnoreCase("admin")) {
+                    editTextAdminEmail.setText("admin2@gmail.com");
+                    editTextAdminEmail.setSelection(editTextAdminEmail.getText().length()); // Move cursor to end
+                    Toast.makeText(AdminSignUpActivity.this, "Email automatically set to admin@gmail.com", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void afterTextChanged(android.text.Editable s) {
+                // No action needed after text changes
+            }
+        });
         // Set click listener for the sign-up button
         buttonAdminSignUp.setOnClickListener(v -> {
             String email = editTextAdminEmail.getText().toString().trim();

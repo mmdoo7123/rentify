@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="my_primary">#ddfdff</color>
+    <color name="my_secondary">#32abb4</color>
+    <color name="my_tertiary">#005559</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="fab_margin">16dp</dimen>
+    <string name="add_item">Add Item</string>
+    <string name="app_name">Renters</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="gcm_defaultSenderId" translatable="false">643207711082</string>
+    <string name="google_api_key" translatable="false">AIzaSyCFeDX_zA0zW53ynJSOpCzYM9oWX9PtNSk</string>
+    <string name="google_app_id" translatable="false">1:643207711082:android:43598f41b4c9e3c4a2bd13</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCFeDX_zA0zW53ynJSOpCzYM9oWX9PtNSk</string>
+    <string name="google_storage_bucket" translatable="false">rentify-c20de.appspot.com</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="project_id" translatable="false">rentify-c20de</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="select_category">Select Category</string>
+    <string name="upload_photo">Upload Photo</string>
+    <style name="Base.Theme.Renters" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Renters" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/my_primary</item>
+        <item name="colorSecondary">@color/my_secondary</item>
+        
+    </style>
+</resources>
