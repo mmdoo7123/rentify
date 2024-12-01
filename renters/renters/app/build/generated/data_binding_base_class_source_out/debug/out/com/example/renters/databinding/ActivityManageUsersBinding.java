@@ -4,13 +4,16 @@ package com.example.renters.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.renters.R;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -20,12 +23,25 @@ public final class ActivityManageUsersBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final MaterialButton btnManageUsers;
+
+  @NonNull
   public final RecyclerView recyclerViewUsers;
 
+  @NonNull
+  public final Toolbar toolbar;
+
+  @NonNull
+  public final TextView toolbarTitle;
+
   private ActivityManageUsersBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView recyclerViewUsers) {
+      @NonNull MaterialButton btnManageUsers, @NonNull RecyclerView recyclerViewUsers,
+      @NonNull Toolbar toolbar, @NonNull TextView toolbarTitle) {
     this.rootView = rootView;
+    this.btnManageUsers = btnManageUsers;
     this.recyclerViewUsers = recyclerViewUsers;
+    this.toolbar = toolbar;
+    this.toolbarTitle = toolbarTitle;
   }
 
   @Override
@@ -55,13 +71,32 @@ public final class ActivityManageUsersBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnManageUsers;
+      MaterialButton btnManageUsers = ViewBindings.findChildViewById(rootView, id);
+      if (btnManageUsers == null) {
+        break missingId;
+      }
+
       id = R.id.recyclerViewUsers;
       RecyclerView recyclerViewUsers = ViewBindings.findChildViewById(rootView, id);
       if (recyclerViewUsers == null) {
         break missingId;
       }
 
-      return new ActivityManageUsersBinding((ConstraintLayout) rootView, recyclerViewUsers);
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbarTitle;
+      TextView toolbarTitle = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarTitle == null) {
+        break missingId;
+      }
+
+      return new ActivityManageUsersBinding((ConstraintLayout) rootView, btnManageUsers,
+          recyclerViewUsers, toolbar, toolbarTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

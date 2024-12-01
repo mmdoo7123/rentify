@@ -6,12 +6,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.renters.R;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,10 +24,16 @@ public final class ActivityRenterSigninBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView LoginTextView;
+
+  @NonNull
+  public final ImageView backgroundImage;
+
+  @NonNull
   public final Button buttonGoToSignUp;
 
   @NonNull
-  public final Button buttonLogin;
+  public final MaterialButton buttonLogin;
 
   @NonNull
   public final EditText editTextEmail;
@@ -33,9 +42,12 @@ public final class ActivityRenterSigninBinding implements ViewBinding {
   public final EditText editTextPassword;
 
   private ActivityRenterSigninBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button buttonGoToSignUp, @NonNull Button buttonLogin,
+      @NonNull TextView LoginTextView, @NonNull ImageView backgroundImage,
+      @NonNull Button buttonGoToSignUp, @NonNull MaterialButton buttonLogin,
       @NonNull EditText editTextEmail, @NonNull EditText editTextPassword) {
     this.rootView = rootView;
+    this.LoginTextView = LoginTextView;
+    this.backgroundImage = backgroundImage;
     this.buttonGoToSignUp = buttonGoToSignUp;
     this.buttonLogin = buttonLogin;
     this.editTextEmail = editTextEmail;
@@ -69,6 +81,18 @@ public final class ActivityRenterSigninBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.LoginTextView;
+      TextView LoginTextView = ViewBindings.findChildViewById(rootView, id);
+      if (LoginTextView == null) {
+        break missingId;
+      }
+
+      id = R.id.backgroundImage;
+      ImageView backgroundImage = ViewBindings.findChildViewById(rootView, id);
+      if (backgroundImage == null) {
+        break missingId;
+      }
+
       id = R.id.buttonGoToSignUp;
       Button buttonGoToSignUp = ViewBindings.findChildViewById(rootView, id);
       if (buttonGoToSignUp == null) {
@@ -76,7 +100,7 @@ public final class ActivityRenterSigninBinding implements ViewBinding {
       }
 
       id = R.id.buttonLogin;
-      Button buttonLogin = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton buttonLogin = ViewBindings.findChildViewById(rootView, id);
       if (buttonLogin == null) {
         break missingId;
       }
@@ -93,8 +117,8 @@ public final class ActivityRenterSigninBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRenterSigninBinding((ConstraintLayout) rootView, buttonGoToSignUp,
-          buttonLogin, editTextEmail, editTextPassword);
+      return new ActivityRenterSigninBinding((ConstraintLayout) rootView, LoginTextView,
+          backgroundImage, buttonGoToSignUp, buttonLogin, editTextEmail, editTextPassword);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

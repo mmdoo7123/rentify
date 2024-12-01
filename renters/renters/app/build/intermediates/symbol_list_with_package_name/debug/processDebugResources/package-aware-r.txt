@@ -3235,6 +3235,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btnChangeItems
 id btnLogout
+id btnManageUsers
 id btnPaymentInfo
 id btnViewRequests
 id buttonAddCategory
@@ -3708,6 +3709,8 @@ id titleScreen
 id titleText
 id title_template
 id toggle
+id toolbar
+id toolbarTitle
 id top
 id topPanel
 id touch_outside

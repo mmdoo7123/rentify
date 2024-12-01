@@ -38,10 +38,10 @@ public class LessorSignin extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
         // Initialize UI components
-        editTextEmail = findViewById(R.id.editTextEmail);
-        editTextPassword = findViewById(R.id.editTextPassword);
-        buttonLogin = findViewById(R.id.buttonLogin);
-        buttonGoToSignUp = findViewById(R.id.buttonGoToSignUp);
+        editTextEmail = findViewById(R.id.editTextAdminEmail);
+        editTextPassword = findViewById(R.id.editTextAdminPassword);
+        buttonLogin = findViewById(R.id.buttonAdminLogin);
+
 
         // Handle login button click
         buttonLogin.setOnClickListener(new View.OnClickListener() {
@@ -58,15 +58,7 @@ public class LessorSignin extends AppCompatActivity {
             }
         });
 
-        // Handle sign-up button click
-        buttonGoToSignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Navigate to Lessor Sign-Up Activity
-                Intent intent = new Intent(LessorSignin.this, LessorSignUp.class);
-                startActivity(intent);
-            }
-        });
+
     }
 
     private void loginUser(String email, String password) {
