@@ -1463,6 +1463,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -2101,6 +2102,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color red
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -3234,19 +3236,18 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnChangeItems
+id btnDeleteCategory
+id btnEditCategory
 id btnLogout
 id btnManageUsers
 id btnPaymentInfo
 id btnViewRequests
-id buttonAddCategory
 id buttonAddItem
 id buttonAdminLogin
 id buttonAdminSignUp
 id buttonDelete
-id buttonDeleteCategory
 id buttonDeleteItem
 id buttonDisable
-id buttonEditCategory
 id buttonEditItem
 id buttonFirst
 id buttonGoToSignUp
@@ -3255,6 +3256,7 @@ id buttonLogout
 id buttonManageCategories
 id buttonManageUsers
 id buttonPanel
+id buttonSaveCategory
 id buttonSearch
 id buttonSelectAdmin
 id buttonSelectLessor
@@ -3268,6 +3270,8 @@ id callMeasure
 id cancelButton
 id cancel_button
 id carryVelocity
+id categoryDescription
+id categoryName
 id center
 id centerCrop
 id centerInside
@@ -3368,6 +3372,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fabAddCategory
 id fade
 id fill
 id fill_horizontal
@@ -3416,6 +3421,8 @@ id immediateStop
 id included
 id indeterminate
 id info
+id inputLayoutCategoryDescription
+id inputLayoutCategoryName
 id inspection_slot_table_set
 id invisible
 id inward
@@ -3440,7 +3447,6 @@ id light
 id line1
 id line3
 id linear
-id linearLayout
 id linearLayoutActions
 id listMode
 id list_item
@@ -3683,8 +3689,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textViewCategory
-id textViewCategoryDescription
-id textViewCategoryName
 id textViewDescription
 id textViewFee
 id textViewGreeting
@@ -3866,6 +3870,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_edit_category
 layout activity_admin_dashboard
 layout activity_adminsignup
 layout activity_category_management

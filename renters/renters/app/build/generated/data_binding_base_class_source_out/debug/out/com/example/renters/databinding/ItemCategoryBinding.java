@@ -4,10 +4,11 @@ package com.example.renters.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.renters.R;
@@ -17,24 +18,33 @@ import java.lang.String;
 
 public final class ItemCategoryBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView textViewCategoryDescription;
+  public final Button btnDeleteCategory;
 
   @NonNull
-  public final TextView textViewCategoryName;
+  public final Button btnEditCategory;
 
-  private ItemCategoryBinding(@NonNull LinearLayout rootView,
-      @NonNull TextView textViewCategoryDescription, @NonNull TextView textViewCategoryName) {
+  @NonNull
+  public final TextView categoryDescription;
+
+  @NonNull
+  public final TextView categoryName;
+
+  private ItemCategoryBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnDeleteCategory,
+      @NonNull Button btnEditCategory, @NonNull TextView categoryDescription,
+      @NonNull TextView categoryName) {
     this.rootView = rootView;
-    this.textViewCategoryDescription = textViewCategoryDescription;
-    this.textViewCategoryName = textViewCategoryName;
+    this.btnDeleteCategory = btnDeleteCategory;
+    this.btnEditCategory = btnEditCategory;
+    this.categoryDescription = categoryDescription;
+    this.categoryName = categoryName;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -59,20 +69,32 @@ public final class ItemCategoryBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.textViewCategoryDescription;
-      TextView textViewCategoryDescription = ViewBindings.findChildViewById(rootView, id);
-      if (textViewCategoryDescription == null) {
+      id = R.id.btnDeleteCategory;
+      Button btnDeleteCategory = ViewBindings.findChildViewById(rootView, id);
+      if (btnDeleteCategory == null) {
         break missingId;
       }
 
-      id = R.id.textViewCategoryName;
-      TextView textViewCategoryName = ViewBindings.findChildViewById(rootView, id);
-      if (textViewCategoryName == null) {
+      id = R.id.btnEditCategory;
+      Button btnEditCategory = ViewBindings.findChildViewById(rootView, id);
+      if (btnEditCategory == null) {
         break missingId;
       }
 
-      return new ItemCategoryBinding((LinearLayout) rootView, textViewCategoryDescription,
-          textViewCategoryName);
+      id = R.id.categoryDescription;
+      TextView categoryDescription = ViewBindings.findChildViewById(rootView, id);
+      if (categoryDescription == null) {
+        break missingId;
+      }
+
+      id = R.id.categoryName;
+      TextView categoryName = ViewBindings.findChildViewById(rootView, id);
+      if (categoryName == null) {
+        break missingId;
+      }
+
+      return new ItemCategoryBinding((ConstraintLayout) rootView, btnDeleteCategory,
+          btnEditCategory, categoryDescription, categoryName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

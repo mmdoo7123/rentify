@@ -1,10 +1,10 @@
-#Sun Dec 01 16:31:04 EST 2024
-base.0=C\:\\Users\\mahmo\\Deliv4pt2\\seg2105f24-project-group_project_21\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\mahmo\\Deliv4pt2\\seg2105f24-project-group_project_21\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\mahmo\\Deliv4pt2\\seg2105f24-project-group_project_21\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
-base.3=C\:\\Users\\mahmo\\Deliv4pt2\\seg2105f24-project-group_project_21\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.4=C\:\\Users\\mahmo\\Deliv4pt2\\seg2105f24-project-group_project_21\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.5=C\:\\Users\\mahmo\\Deliv4pt2\\seg2105f24-project-group_project_21\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+#Mon Dec 02 14:21:52 AST 2024
+base.0=C\:\\Users\\user\\Documents\\derniereVersionLivrable4\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\user\\Documents\\derniereVersionLivrable4\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\user\\Documents\\derniereVersionLivrable4\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.3=C\:\\Users\\user\\Documents\\derniereVersionLivrable4\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.4=C\:\\Users\\user\\Documents\\derniereVersionLivrable4\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.5=C\:\\Users\\user\\Documents\\derniereVersionLivrable4\\renters\\renters\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=4/classes.dex

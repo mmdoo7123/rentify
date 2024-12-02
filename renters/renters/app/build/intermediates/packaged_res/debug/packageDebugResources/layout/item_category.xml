@@ -1,26 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- TextView pour afficher le nom de la catégorie -->
+    <!-- Category Name -->
     <TextView
-        android:id="@+id/textViewCategoryName"
-        android:layout_width="wrap_content"
+        android:id="@+id/categoryName"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Category Name"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginBottom="4dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnEditCategory"
+        android:layout_marginEnd="8dp" />
 
-    <!-- TextView pour afficher la description de la catégorie -->
+    <!-- Category Description -->
     <TextView
-        android:id="@+id/textViewCategoryDescription"
+        android:id="@+id/categoryDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryName"
+        app:layout_constraintEnd_toStartOf="@id/btnEditCategory"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp" />
+
+    <!-- Edit Button -->
+    <Button
+        android:id="@+id/btnEditCategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Category Description"
-        android:textSize="14sp"
-        android:textColor="@android:color/darker_gray" />
-</LinearLayout>
+        android:backgroundTint="@color/my_secondary"
+        android:text="Edit"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnDeleteCategory"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Delete Button -->
+    <Button
+        android:id="@+id/btnDeleteCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="Delete"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

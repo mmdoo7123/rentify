@@ -1,41 +1,66 @@
 package com.example.renters;
 
-import android.graphics.Color;
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.firebase.firestore.FirebaseFirestore;
+
 import java.util.List;
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder> {
 
-    private final List<CategoryItem> categoryList;
-    private final OnCategorySelectedListener onCategorySelectedListener;
-    private int selectedCategoryPosition = -1;
-    // Interface pour gérer la sélection de catégories
-    public interface OnCategorySelectedListener {
-        void onCategorySelected(int position);
-    }
+    private final List<Category> categoryList;
+    private final Context context;
+    private final FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-    // Constructeur
-    public CategoryAdapter(List<CategoryItem> categoryList, OnCategorySelectedListener onCategorySelectedListener) {
+    public CategoryAdapter(List<Category> categoryList, Context context) {
         this.categoryList = categoryList;
-        this.onCategorySelectedListener = onCategorySelectedListener;
+        this.context = context;
     }
 
     @NonNull
     @Override
     public CategoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_category, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_category, parent, false);
         return new CategoryViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull CategoryViewHolder holder, int position) {
-        CategoryItem category = categoryList.get(position);
-        holder.bind(category, position);
+        Category category = categoryList.get(position);
+        holder.categoryName.setText(category.getName());
+        holder.categoryDescription.setText(category.getDescription());
+
+        // Edit Button Click Listener
+        holder.btnEditCategory.setOnClickListener(view -> {
+            Intent intent = new Intent(context, AddEditCategory.class);
+            intent.putExtra("categoryId", category.getId());
+            intent.putExtra("categoryName", category.getName());
+            intent.putExtra("categoryDescription", category.getDescription());
+            context.startActivity(intent);
+        });
+
+        // Delete Button Click Listener
+        holder.btnDeleteCategory.setOnClickListener(view -> {
+            db.collection("categories").document(category.getId())
+                    .delete()
+                    .addOnSuccessListener(aVoid -> {
+                        Toast.makeText(context, "Category deleted", Toast.LENGTH_SHORT).show();
+                        categoryList.remove(position);
+                        notifyItemRemoved(position);
+                        notifyItemRangeChanged(position, categoryList.size());
+                    })
+                    .addOnFailureListener(e -> Toast.makeText(context, "Failed to delete category", Toast.LENGTH_SHORT).show());
+        });
     }
 
     @Override
@@ -43,38 +68,17 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         return categoryList.size();
     }
 
-    public void setSelectedCategoryPosition(int position) {
-        selectedCategoryPosition = position;
-        notifyDataSetChanged(); // Refresh the list to update UI
-    }
+    public static class CategoryViewHolder extends RecyclerView.ViewHolder {
 
-    // ViewHolder pour les éléments de catégorie
-    public class CategoryViewHolder extends RecyclerView.ViewHolder {
-        private final TextView textViewCategoryName;
-        private final TextView textViewCategoryDescription;
+        TextView categoryName, categoryDescription;
+        Button btnEditCategory, btnDeleteCategory;
 
         public CategoryViewHolder(@NonNull View itemView) {
             super(itemView);
-            textViewCategoryName = itemView.findViewById(R.id.textViewCategoryName);
-            textViewCategoryDescription = itemView.findViewById(R.id.textViewCategoryDescription);
-        }
-
-        public void bind(CategoryItem category, int position) {
-            textViewCategoryName.setText(category.getName());
-            textViewCategoryDescription.setText(category.getDescription());
-
-            // Highlight the selected category
-            if (selectedCategoryPosition == position) {
-                itemView.setBackgroundColor(Color.LTGRAY); // Change to your preferred color
-            } else {
-                itemView.setBackgroundColor(Color.TRANSPARENT); // Reset color for non-selected items
-            }
-
-            itemView.setOnClickListener(v -> {
-                if (onCategorySelectedListener != null) {
-                    onCategorySelectedListener.onCategorySelected(position);
-                }
-            });
+            categoryName = itemView.findViewById(R.id.categoryName);
+            categoryDescription = itemView.findViewById(R.id.categoryDescription);
+            btnEditCategory = itemView.findViewById(R.id.btnEditCategory);
+            btnDeleteCategory = itemView.findViewById(R.id.btnDeleteCategory);
         }
     }
 }

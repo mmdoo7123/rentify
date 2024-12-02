@@ -4,9 +4,6 @@ package com.example.renters.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -14,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.renters.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,42 +21,15 @@ public final class ActivityCategoryManagementBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button buttonAddCategory;
-
-  @NonNull
-  public final Button buttonDeleteCategory;
-
-  @NonNull
-  public final Button buttonEditCategory;
-
-  @NonNull
-  public final EditText editTextCategoryDescription;
-
-  @NonNull
-  public final EditText editTextCategoryName;
-
-  @NonNull
-  public final LinearLayout linearLayout;
-
-  @NonNull
-  public final ConstraintLayout main;
+  public final FloatingActionButton fabAddCategory;
 
   @NonNull
   public final RecyclerView recyclerViewCategories;
 
   private ActivityCategoryManagementBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button buttonAddCategory, @NonNull Button buttonDeleteCategory,
-      @NonNull Button buttonEditCategory, @NonNull EditText editTextCategoryDescription,
-      @NonNull EditText editTextCategoryName, @NonNull LinearLayout linearLayout,
-      @NonNull ConstraintLayout main, @NonNull RecyclerView recyclerViewCategories) {
+      @NonNull FloatingActionButton fabAddCategory, @NonNull RecyclerView recyclerViewCategories) {
     this.rootView = rootView;
-    this.buttonAddCategory = buttonAddCategory;
-    this.buttonDeleteCategory = buttonDeleteCategory;
-    this.buttonEditCategory = buttonEditCategory;
-    this.editTextCategoryDescription = editTextCategoryDescription;
-    this.editTextCategoryName = editTextCategoryName;
-    this.linearLayout = linearLayout;
-    this.main = main;
+    this.fabAddCategory = fabAddCategory;
     this.recyclerViewCategories = recyclerViewCategories;
   }
 
@@ -89,43 +60,11 @@ public final class ActivityCategoryManagementBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.buttonAddCategory;
-      Button buttonAddCategory = ViewBindings.findChildViewById(rootView, id);
-      if (buttonAddCategory == null) {
+      id = R.id.fabAddCategory;
+      FloatingActionButton fabAddCategory = ViewBindings.findChildViewById(rootView, id);
+      if (fabAddCategory == null) {
         break missingId;
       }
-
-      id = R.id.buttonDeleteCategory;
-      Button buttonDeleteCategory = ViewBindings.findChildViewById(rootView, id);
-      if (buttonDeleteCategory == null) {
-        break missingId;
-      }
-
-      id = R.id.buttonEditCategory;
-      Button buttonEditCategory = ViewBindings.findChildViewById(rootView, id);
-      if (buttonEditCategory == null) {
-        break missingId;
-      }
-
-      id = R.id.editTextCategoryDescription;
-      EditText editTextCategoryDescription = ViewBindings.findChildViewById(rootView, id);
-      if (editTextCategoryDescription == null) {
-        break missingId;
-      }
-
-      id = R.id.editTextCategoryName;
-      EditText editTextCategoryName = ViewBindings.findChildViewById(rootView, id);
-      if (editTextCategoryName == null) {
-        break missingId;
-      }
-
-      id = R.id.linearLayout;
-      LinearLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout == null) {
-        break missingId;
-      }
-
-      ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.recyclerViewCategories;
       RecyclerView recyclerViewCategories = ViewBindings.findChildViewById(rootView, id);
@@ -133,9 +72,8 @@ public final class ActivityCategoryManagementBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityCategoryManagementBinding((ConstraintLayout) rootView, buttonAddCategory,
-          buttonDeleteCategory, buttonEditCategory, editTextCategoryDescription,
-          editTextCategoryName, linearLayout, main, recyclerViewCategories);
+      return new ActivityCategoryManagementBinding((ConstraintLayout) rootView, fabAddCategory,
+          recyclerViewCategories);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
