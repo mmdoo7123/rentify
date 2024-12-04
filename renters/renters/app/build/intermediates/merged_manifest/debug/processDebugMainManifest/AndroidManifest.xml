@@ -35,6 +35,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Renters" >
         <activity
+            android:name="com.example.renters.AdminManageUsersActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.renters.AddEditCategory"
             android:exported="false" />
         <activity

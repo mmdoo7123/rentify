@@ -118,10 +118,13 @@ id status
 id subtitle
 id textViewCategory
 id textViewDescription
+id textViewEmail
 id textViewFee
 id textViewGreeting
 id textViewName
+id textViewRole
 id textViewTimePeriod
+id textViewTitle
 id textViewUserName
 id textview_first
 id textview_second
@@ -136,6 +139,7 @@ id welcomeText
 id welcomeTextView
 layout activity_add_edit_category
 layout activity_admin_dashboard
+layout activity_admin_manage_users
 layout activity_adminsignup
 layout activity_category_management
 layout activity_lessor_page

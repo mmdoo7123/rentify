@@ -3689,10 +3689,13 @@ int id textStart 0x7f080239
 int id textTop 0x7f08023a
 int id textViewCategory 0x7f08023b
 int id textViewDescription 0x7f08023c
+int id textViewEmail 0x7f08027e
 int id textViewFee 0x7f08023d
 int id textViewGreeting 0x7f08023e
 int id textViewName 0x7f08023f
+int id textViewRole 0x7f08027f
 int id textViewTimePeriod 0x7f080240
+int id textViewTitle 0x7f080280
 int id textViewUserName 0x7f080241
 int id text_input_end_icon 0x7f080242
 int id text_input_error_icon 0x7f080243
@@ -3871,6 +3874,7 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_add_edit_category 0x7f0b001c
 int layout activity_admin_dashboard 0x7f0b001d
+int layout activity_admin_manage_users 0x7f0b008d
 int layout activity_adminsignup 0x7f0b001e
 int layout activity_category_management 0x7f0b001f
 int layout activity_lessor_page 0x7f0b0020

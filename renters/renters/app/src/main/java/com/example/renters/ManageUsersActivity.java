@@ -1,6 +1,8 @@
 package com.example.renters;
 
 import android.os.Bundle;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -20,24 +22,38 @@ public class ManageUsersActivity extends AppCompatActivity {
     private UserAdapter userAdapter;
     private List<User> userList;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manage_users);
 
-        // Initialize Firestore and RecyclerView
-        db = FirebaseFirestore.getInstance();
-        recyclerViewUsers = findViewById(R.id.recyclerViewUsers);
+        RecyclerView recyclerViewUsers = findViewById(R.id.recyclerViewUsers);
         recyclerViewUsers.setLayoutManager(new LinearLayoutManager(this));
 
-        // Initialize user list and adapter
-        userList = new ArrayList<>();
-        userAdapter = new UserAdapter(userList, db);
+        List<User> userList = new ArrayList<>(); // Initialize the user list
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        UserAdapter userAdapter = new UserAdapter(this, userList, db); // Pass context and Firestore
         recyclerViewUsers.setAdapter(userAdapter);
 
-        // Fetch users from Firestore
-        fetchUsersFromFirestore();
+        // Fetch user data from Firestore
+        db.collection("users").get()
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        for (DocumentSnapshot document : task.getResult()) {
+                            User user = document.toObject(User.class);
+                            if (user != null) {
+                                userList.add(user);
+                            }
+                        }
+                        userAdapter.notifyDataSetChanged(); // Notify adapter of data change
+                    } else {
+                        Toast.makeText(this, "Failed to load users", Toast.LENGTH_SHORT).show();
+                    }
+                });
     }
+
 
     private void fetchUsersFromFirestore() {
         db.collection("users")

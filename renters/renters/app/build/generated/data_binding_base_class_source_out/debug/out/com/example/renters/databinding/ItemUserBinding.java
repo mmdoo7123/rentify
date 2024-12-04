@@ -27,13 +27,22 @@ public final class ItemUserBinding implements ViewBinding {
   public final Button buttonDisable;
 
   @NonNull
+  public final TextView textViewEmail;
+
+  @NonNull
+  public final TextView textViewRole;
+
+  @NonNull
   public final TextView textViewUserName;
 
   private ItemUserBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonDelete,
-      @NonNull Button buttonDisable, @NonNull TextView textViewUserName) {
+      @NonNull Button buttonDisable, @NonNull TextView textViewEmail,
+      @NonNull TextView textViewRole, @NonNull TextView textViewUserName) {
     this.rootView = rootView;
     this.buttonDelete = buttonDelete;
     this.buttonDisable = buttonDisable;
+    this.textViewEmail = textViewEmail;
+    this.textViewRole = textViewRole;
     this.textViewUserName = textViewUserName;
   }
 
@@ -76,6 +85,18 @@ public final class ItemUserBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textViewEmail;
+      TextView textViewEmail = ViewBindings.findChildViewById(rootView, id);
+      if (textViewEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewRole;
+      TextView textViewRole = ViewBindings.findChildViewById(rootView, id);
+      if (textViewRole == null) {
+        break missingId;
+      }
+
       id = R.id.textViewUserName;
       TextView textViewUserName = ViewBindings.findChildViewById(rootView, id);
       if (textViewUserName == null) {
@@ -83,7 +104,7 @@ public final class ItemUserBinding implements ViewBinding {
       }
 
       return new ItemUserBinding((ConstraintLayout) rootView, buttonDelete, buttonDisable,
-          textViewUserName);
+          textViewEmail, textViewRole, textViewUserName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

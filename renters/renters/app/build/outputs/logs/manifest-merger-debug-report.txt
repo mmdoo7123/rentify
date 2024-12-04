@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:2:1-56:12
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:2:1-59:12
 MERGED from [androidx.databinding:viewbinding:8.7.1] C:\Users\user\.gradle\caches\8.9\transforms\3f84e5e106d75c06e2860a9a234bb849\transformed\viewbinding-8.7.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.8.2] C:\Users\user\.gradle\caches\8.9\transforms\7e0052c940394fee71edf2fe1028b283\transformed\navigation-common-2.8.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment:2.8.2] C:\Users\user\.gradle\caches\8.9\transforms\ea1c194703b5edb56595cbb6152694fa\transformed\navigation-fragment-2.8.2\AndroidManifest.xml:17:1-22:12
@@ -165,8 +165,8 @@ MERGED from [io.grpc:grpc-android:1.62.2] C:\Users\user\.gradle\caches\8.9\trans
 	android:name
 		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:8:5-54:19
-INJECTED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:8:5-54:19
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:8:5-57:19
+INJECTED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:8:5-57:19
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\user\.gradle\caches\8.9\transforms\06f88853dd133c4f77e6400c7099e0fd\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\user\.gradle\caches\8.9\transforms\06f88853dd133c4f77e6400c7099e0fd\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\user\.gradle\caches\8.9\transforms\71daece7d7d7787c86010bc96012d409\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -255,100 +255,106 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\user\.gradle\cache
 		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:14:9-69
 	android:dataExtractionRules
 		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:10:9-65
-activity#com.example.renters.AddEditCategory
+activity#com.example.renters.AdminManageUsersActivity
 ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:19:9-21:40
 	android:exported
 		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:20:13-44
-activity#com.example.renters.WelcomeScreenLessor
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:20:13-53
+activity#com.example.renters.AddEditCategory
 ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:22:9-24:40
 	android:exported
 		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:23:13-48
-activity#com.example.renters.ManageUsersActivity
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:25:9-28:52
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:23:13-44
+activity#com.example.renters.WelcomeScreenLessor
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:25:9-27:40
 	android:exported
 		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:27:13-37
-	android:theme
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:28:13-49
 	android:name
 		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:26:13-48
+activity#com.example.renters.ManageUsersActivity
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:28:9-31:52
+	android:exported
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:30:13-37
+	android:theme
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:31:13-49
+	android:name
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:29:13-48
 activity#com.example.renters.CategoryManagementActivity
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:29:9-31:40
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:32:9-34:40
 	android:exported
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:31:13-37
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:30:13-55
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:33:13-55
 activity#com.example.renters.RoleSelectionActivity
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:32:9-40:20
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:35:9-43:20
 	android:exported
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:34:13-36
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:37:13-36
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:33:13-50
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:36:13-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:35:13-39:29
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:38:13-42:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:36:17-69
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:39:17-69
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:36:25-66
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:39:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:38:17-77
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:41:17-77
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:38:27-74
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:41:27-74
 activity#com.example.renters.AdminSignUpActivity
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:41:9-57
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:44:9-57
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:41:19-54
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:44:19-54
 activity#com.example.renters.RenterSignUp
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:42:9-50
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:45:9-50
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:42:19-47
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:45:19-47
 activity#com.example.renters.AdminSignin
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:43:9-49
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:46:9-49
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:43:19-46
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:46:19-46
 activity#com.example.renters.AdminDashboardActivity
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:44:9-60
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:47:9-60
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:44:19-57
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:47:19-57
 activity#com.example.renters.RenterSigninActivity
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:45:9-58
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:48:9-58
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:45:19-55
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:48:19-55
 activity#com.example.renters.RenterDashboardActivity
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:46:9-61
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:49:9-61
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:46:19-58
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:49:19-58
 activity#com.example.renters.LessorSignUp
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:47:9-50
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:50:9-50
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:47:19-47
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:50:19-47
 activity#com.example.renters.LessorSignin
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:48:9-50
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:51:9-50
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:48:19-47
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:51:19-47
 activity#com.example.renters.LessorProfileActivity
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:49:9-59
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:52:9-59
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:49:19-56
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:52:19-56
 activity#com.example.renters.LessorManageItemsActivity
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:50:9-63
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:53:9-63
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:50:19-60
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:53:19-60
 activity#com.example.renters.ItemOrRequestSelectionActivity
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:51:9-68
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:54:9-68
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:51:19-65
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:54:19-65
 activity#com.example.renters.LessorRequestsActivity
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:52:9-60
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:55:9-60
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:52:19-57
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:55:19-57
 activity#com.example.renters.ItemDetailActivity
-ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:53:9-56
+ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:56:9-56
 	android:name
-		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:53:19-53
+		ADDED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml:56:19-53
 uses-sdk
 INJECTED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\user\Documents\derniereVersionLivrable4\renters\renters\app\src\main\AndroidManifest.xml
