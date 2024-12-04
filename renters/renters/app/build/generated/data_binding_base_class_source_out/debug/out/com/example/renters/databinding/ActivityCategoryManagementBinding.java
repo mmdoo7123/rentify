@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
@@ -26,11 +27,16 @@ public final class ActivityCategoryManagementBinding implements ViewBinding {
   @NonNull
   public final RecyclerView recyclerViewCategories;
 
+  @NonNull
+  public final Toolbar toolbar;
+
   private ActivityCategoryManagementBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton fabAddCategory, @NonNull RecyclerView recyclerViewCategories) {
+      @NonNull FloatingActionButton fabAddCategory, @NonNull RecyclerView recyclerViewCategories,
+      @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.fabAddCategory = fabAddCategory;
     this.recyclerViewCategories = recyclerViewCategories;
+    this.toolbar = toolbar;
   }
 
   @Override
@@ -72,8 +78,14 @@ public final class ActivityCategoryManagementBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
       return new ActivityCategoryManagementBinding((ConstraintLayout) rootView, fabAddCategory,
-          recyclerViewCategories);
+          recyclerViewCategories, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

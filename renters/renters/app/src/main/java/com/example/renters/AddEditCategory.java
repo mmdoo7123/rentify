@@ -31,10 +31,10 @@ public class AddEditCategory extends AppCompatActivity {
         categoryDescriptionEditText = findViewById(R.id.editTextCategoryDescription);
         saveCategoryButton = findViewById(R.id.buttonSaveCategory);
 
-        categoryId = getIntent().getStringExtra("CATEGORY_ID");
+        categoryId = getIntent().getStringExtra("categoryId");
         if (categoryId != null) {
-            categoryNameEditText.setText(getIntent().getStringExtra("CATEGORY_NAME"));
-            categoryDescriptionEditText.setText(getIntent().getStringExtra("CATEGORY_DESCRIPTION"));
+            categoryNameEditText.setText(getIntent().getStringExtra("categoryName"));
+            categoryDescriptionEditText.setText(getIntent().getStringExtra("categoryDescription"));
         }
 
         saveCategoryButton.setOnClickListener(view -> saveCategory());

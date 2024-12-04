@@ -13,6 +13,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 import java.util.List;
+import android.view.MenuItem;
+import androidx.appcompat.widget.Toolbar;
 
 public class AdminManageUsersActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
@@ -26,7 +28,14 @@ public class AdminManageUsersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manage_users);
+        // Initialize Toolbar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Enable the back button
+            getSupportActionBar().setDisplayShowTitleEnabled(false); // Hide default title
+        }
         // Initialize RecyclerView and Firestore
         recyclerView = findViewById(R.id.recyclerViewUsers);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -38,7 +47,13 @@ public class AdminManageUsersActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
         fetchUsers();
     }
-
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed(); // Navigate back when the back button is pressed
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
     private void fetchUsers() {
         db.collection("users")
                 .get()

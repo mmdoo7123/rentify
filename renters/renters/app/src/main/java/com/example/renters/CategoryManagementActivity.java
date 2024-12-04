@@ -2,6 +2,7 @@ package com.example.renters;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +14,7 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
+import androidx.appcompat.widget.Toolbar;
 
 public class CategoryManagementActivity extends AppCompatActivity {
 
@@ -26,6 +28,12 @@ public class CategoryManagementActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category_management);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Enable back button
+        }
 
         recyclerView = findViewById(R.id.recyclerViewCategories);
         addCategoryButton = findViewById(R.id.fabAddCategory);
@@ -45,7 +53,24 @@ public class CategoryManagementActivity extends AppCompatActivity {
             startActivity(intent);
         });
     }
-
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadCategories(); // Reload categories
+    }
+    // Handle the back button action
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            // Navigate back to the main admin dashboard
+            Intent intent = new Intent(CategoryManagementActivity.this, AdminDashboardActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
     private void loadCategories() {
         db.collection("categories")
                 .get()

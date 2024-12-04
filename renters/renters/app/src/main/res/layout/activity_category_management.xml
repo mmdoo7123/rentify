@@ -20,17 +20,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:listitem="@layout/item_category" />
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_primary"
+        android:elevation="4dp"
+        app:title="Category Management"
+        app:titleTextColor="@android:color/black"
+        app:navigationIconTint="@android:color/black"
+        android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+
     <!-- Floating Action Button to Add Category -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAddCategory"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="347dp"
+        android:layout_height="120dp"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Add a new category"
         android:src="@drawable/ic_add"
         android:tint="@color/white"
         app:backgroundTint="@color/my_secondary"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16dp"
-        android:contentDescription="Add a new category" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

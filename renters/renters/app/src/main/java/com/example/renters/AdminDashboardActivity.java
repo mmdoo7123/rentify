@@ -68,7 +68,7 @@ public class AdminDashboardActivity extends AppCompatActivity {
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         String adminName = task.getResult().getString("name");
-                        textViewGreeting.setText("Hello Admin " + adminName);
+                        textViewGreeting.setText("Hello Admin ");
                     } else {
                         textViewGreeting.setText("Hello Admin");
                     }

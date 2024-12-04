@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/my_primary"
-        android:elevation="4dp">
+        android:elevation="4dp"
+        app:navigationIcon="@drawable/ic_back_arrow">
 
         <!-- Centered Title -->
         <TextView

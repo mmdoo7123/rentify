@@ -12,6 +12,7 @@ drawable admin
 drawable baseline_check_24
 drawable baseline_remove_red_eye_24
 drawable ic_add
+drawable ic_back_arrow
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable lessor
